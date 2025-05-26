@@ -1,11 +1,12 @@
 /* Stil general pentru pagină */
 body {
-  background-image: url("/images/bigbg2.jpg");
-  background-size: cover;
+  background-image: url("/images/futsalbg.png");
+  /* background-size: cover; */
   background-repeat: no-repeat;
   background-position: center center;
   margin: 0;
   padding: 0;
+  color: #ececec;
   min-height: 100vh;
   font-family: "Premier League", sans-serif;
 }
@@ -19,7 +20,7 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 50px;
-  background-color: rgb(244, 244, 244);
+  background-color: rgb(28, 28, 28);
   padding: 30px;
   border-radius: 15px;
   max-width: 1500px;
@@ -42,13 +43,13 @@ body {
 #teamName {
   font-size: 30px;
   color: #ffffff;
-  background-color: #f28911;
+  background-color: #7719ea;
   padding: 5px;
 }
 
 .usernamediv {
   padding-bottom: 5px;
-  border-bottom: 1px solid #ababab;
+  border-bottom: 1px solid #3a3a3a;
 }
 
 /* Stiluri pentru imaginea echipei */
@@ -61,9 +62,6 @@ body {
 /* Secțiunea din dreapta */
 .right-panel {
   flex: 1.5;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
 }
 
 /* Stiluri pentru lista jucătorilor */
@@ -79,11 +77,11 @@ body {
 
 a {
   text-decoration: none;
-  color: #333;
+  color: #ececec;
 }
 
 a:hover {
-  color: #f99c07;
+  color: #a007f9;
   transition: 0.2s;
 }
 
@@ -100,8 +98,8 @@ table {
   margin-bottom: 20px;
 }
 
-thead {
-  background-color: #f99c07;
+.thead2 {
+  background: linear-gradient(-60deg, #3928ff 0%, #8419f0 100%);
   color: white;
 }
 
@@ -109,15 +107,15 @@ th,
 td {
   padding: 10px;
   text-align: center;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #3a3a3a;
 }
 
 tr:nth-child(even) {
-  background-color: #edecec; /* Culoare pentru liniile impare */
+  background-color: #2b2b2b; /* Culoare pentru liniile impare */
 }
 
-.right-panel .currentsquad {
-  background-color: #333;
+.right-panel h2 {
+  background-color: #262626;
   color: white;
   padding: 10px;
 }
@@ -133,12 +131,9 @@ tr:nth-child(even) {
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2), 0 -10px 10px rgba(0, 0, 0, 0.2),
       10px 0 10px rgba(0, 0, 0, 0.2), -10px 0 10px rgba(0, 0, 0, 0.2);
   }
+
   .leaguetable1 {
-    margin: 50px 10px 0;
-  }
-  .trophy-image {
-    width: 110px !important;
-    height: 110px !important;
+    display: none;
   }
 
   .maindiv {
@@ -169,6 +164,11 @@ tr:nth-child(even) {
     text-align: center;
   }
 
+  .trophy-image {
+    width: 110px !important;
+    height: 110px !important;
+  }
+
   .flag-icon {
     width: 20px;
     height: 20px;
@@ -181,6 +181,9 @@ tr:nth-child(even) {
   th,
   td {
     padding: 6px;
+  }
+  .leaguetable1 {
+    margin: 50px 10px 0;
   }
 }
 
@@ -259,25 +262,29 @@ tr:nth-child(even) {
 }
 
 #mostMatches {
-  background-color: #edecec;
+  background-color: #282828;
 }
 
 #topAssister {
-  background-color: #edecec;
+  background-color: #282828;
 }
 
 #foundedSeason {
   background: linear-gradient(-60deg, #333 0%, #454545 100%);
-  color: #f28911;
+  color: #e67efd;
   justify-content: center;
 }
 
 /* Stilul general pentru buton */
 #viewPlayersButton {
-  background-color: #f28911; /* Portocaliu */
+  background: linear-gradient(
+    109.6deg,
+    rgb(111, 28, 253) 50.2%,
+    rgb(100, 17, 243) 11.2%
+  ); /* Portocaliu */
   color: #ffffff; /* Alb */
   border: none;
-  margin-top: 5px;
+  margin-top: 20px;
   border-radius: 5px;
   padding: 10px 20px;
   font-size: 16px;
@@ -289,7 +296,7 @@ tr:nth-child(even) {
 
 /* Stiluri pentru buton la hover */
 #viewPlayersButton:hover {
-  background-color: #e07b00; /* Nuantă mai închisă de portocaliu la hover */
+  background-color: #a007f9; /* Nuantă mai închisă de portocaliu la hover */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Umbră la hover */
 }
 
@@ -322,11 +329,11 @@ tr:nth-child(even) {
 }
 
 .trophies h2 {
-  border-bottom: 1px solid #f99c07;
+  border-bottom: 1px solid #540dfa;
   padding: 10px 0;
   padding-bottom: 5px;
   margin: 0;
-  color: #f99c07;
+  color: #8b0dfa;
   font-size: 23px;
 }
 
@@ -342,19 +349,38 @@ tr:nth-child(even) {
   /* padding: 20px; */
   /* border: 1px solid #ddd; */
   border-radius: 8px;
-  background-color: #fff;
+  background-color: rgb(40, 40, 40);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #leagueTableBody1 tr:nth-child(1) {
-  background-color: #fca950;
+  background-color: #0a12a5;
 }
 
-#leagueTableBody1 tr:nth-child(11) {
-  background-color: #fdadad;
+#leagueTableBody2 tr:nth-child(1) {
+  background-color: #0a12a5;
 }
-#leagueTableBody1 tr:nth-child(12) {
-  background-color: #fdadad;
+
+#leagueTableBody1 tr:nth-child(even) {
+  background-color: rgb(28, 28, 28);
+}
+
+#leagueTableBody2 tr:nth-child(even) {
+  background-color: rgb(28, 28, 28);
+}
+
+#leagueTableBody1 tr:nth-child(9) {
+  background-color: #600d0d;
+}
+#leagueTableBody1 tr:nth-child(10) {
+  background-color: #600d0d;
+}
+
+#leagueTableBody2 tr:nth-child(9) {
+  background-color: #600d0d;
+}
+#leagueTableBody2 tr:nth-child(10) {
+  background-color: #600d0d;
 }
 
 .dashboard h2 {
@@ -369,7 +395,7 @@ tr:nth-child(even) {
   width: 100%;
   position: relative;
   padding: 10px;
-  background: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+  background: linear-gradient(-60deg, #963bff 0%, #2c29fd 100%);
   /* background-image: url(../i/elements/backgrounds/sm-header-pattern.svg); */
   background-position: 50%;
   background-repeat: no-repeat;
@@ -386,23 +412,25 @@ tr:nth-child(even) {
   margin-top: 50px;
   flex: 1;
   min-width: 300px;
+  background-color: rgb(40, 40, 40);
 }
 
 .leaguetable1 table {
   width: 100%;
   border-collapse: collapse;
+  background-color: rgb(40, 40, 40);
 }
 
 .leaguetable1 .club1 {
   display: flex;
   align-items: center;
-  color: #3d2708;
+  color: #ececec;
 }
 
 .leaguetable1 .club1:hover {
   display: flex;
   align-items: center;
-  color: #3d2708;
+  color: #870281;
   text-decoration: underline;
 }
 
@@ -416,11 +444,17 @@ a {
   margin-right: 5px;
 }
 
+.leaguetable2 td img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
 .leaguetable1 th,
 .leaguetable1 td {
   /* text-align: left; */
   padding: 7px;
-  color: #3d2708;
+  color: #ececec;
   border-top: 1px solid #ddd;
   text-align: center;
   font-size: 16px;
@@ -433,5 +467,5 @@ a {
 }
 
 .thead1 {
-  background-color: white;
+  background-color: rgb(24, 24, 24);
 }

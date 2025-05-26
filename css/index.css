@@ -12,7 +12,7 @@
 } */
 
 body {
-  background-color: #f3f3f3;
+  background-color: #161616;
 }
 
 body {
@@ -238,18 +238,18 @@ body {
 
 /* Style for the login button */
 .login-button {
-  background-color: #f38600;
+  background-color: #6d00f3;
   color: white;
   border-radius: 4px;
 }
 
 .logout-button {
-  background-color: #f38600;
+  background-color: #6d00f3;
   color: white;
   border-radius: 4px;
 }
 .logout-button {
-  background-color: #f38600;
+  background-color: #6d00f3;
 }
 
 .login-button:hover {
@@ -317,27 +317,19 @@ body {
   /* padding: 20px; */
   /* border: 1px solid #ddd; */
   border-radius: 8px;
-  background-color: #fff;
+  background-color: #161616;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-#leagueTableBody tr:nth-child(1) {
+/* #leagueTableBody tr:nth-child(1) {
   background-color: #fca950;
-}
+} */
 
-#leagueTableBody tr:nth-child(2) {
-  background-color: #e8e8e8;
+#leagueTableBody tr:nth-child(9) {
+  background-color: #551818;
 }
-
-#leagueTableBody tr:nth-child(3) {
-  background-color: #e8e8e8;
-}
-
-#leagueTableBody tr:nth-child(11) {
-  background-color: #fdadad;
-}
-#leagueTableBody tr:nth-child(12) {
-  background-color: #fdadad;
+#leagueTableBody tr:nth-child(10) {
+  background-color: #551818;
 }
 
 .dashboard h2 {
@@ -352,7 +344,7 @@ body {
   width: 100%;
   position: relative;
   padding: 0 1rem;
-  background: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+  background: linear-gradient(-60deg, #3928ff 0%, #8419f0 100%);
   /* background-image: url(../i/elements/backgrounds/sm-header-pattern.svg); */
   background-position: 50%;
   background-repeat: no-repeat;
@@ -374,7 +366,7 @@ body {
   display: block;
   margin: 20px auto 0;
   padding: 10px 20px;
-  background-color: #ff6600;
+  background-color: #3c00ff;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -386,7 +378,7 @@ body {
 }
 
 .latest-transfers .button:hover {
-  background-color: #e55d00;
+  background-color: #3600c9;
 }
 
 .imgarticle {
@@ -451,6 +443,7 @@ body {
 } */
 
 .leaguetable table {
+  background-color: rgb(40, 40, 40);
   width: 100%;
   border-collapse: collapse;
 }
@@ -458,13 +451,13 @@ body {
 .leaguetable .club {
   display: flex;
   align-items: center;
-  color: #3d2708;
+  color: rgb(247, 247, 246);
 }
 
 .leaguetable .club:hover {
   display: flex;
   align-items: center;
-  color: #3d2708;
+  color: #9400c1;
   text-decoration: underline;
 }
 
@@ -482,8 +475,8 @@ a {
 .leaguetable td {
   /* text-align: left; */
   padding: 7px;
-  color: #3d2708;
-  border-top: 1px solid #ddd;
+  color: rgb(247, 247, 246);
+  border-top: 1px solid #000000;
   text-align: center;
   font-size: 16px;
 }
@@ -556,7 +549,7 @@ a {
 }
 
 .change-background {
-  background-color: rgb(249, 162, 0);
+  background-color: rgb(120, 0, 249);
   color: white;
 }
 
@@ -656,8 +649,8 @@ a {
 .statistics-button {
   background: linear-gradient(
     109.6deg,
-    rgb(243, 141, 17) 11.2%,
-    rgb(230, 137, 16) 91.1%
+    rgb(100, 17, 243) 40.2%,
+    rgb(90, 3, 241) 11.2%
   );
   color: #fff;
   font-family: "Premier League", sans-serif;
@@ -679,7 +672,7 @@ a {
     rgb(190, 114, 15) 91.1%
   ); */
   transition: 0.3s;
-  color: rgb(50, 50, 50);
+  color: rgb(194, 194, 194);
 }
 
 /* LATEST NEWS */
@@ -715,8 +708,12 @@ a {
 }
 .latest-news h2 {
   text-align: center;
-  background-color: #333;
-  color: orange;
+  background: linear-gradient(
+    109.6deg,
+    rgb(100, 17, 243) 13.2%,
+    rgb(57, 57, 57) 11.2%
+  );
+  color: white;
   padding: 10px;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -743,7 +740,7 @@ a {
 
 .fa-arrow-right {
   font-size: 30px;
-  color: orange;
+  color: #3f00eb;
 }
 
 .transfer-flag img {
@@ -801,9 +798,9 @@ a {
   padding: 10px;
   color: white; /* Text color */
   background: rgba(
-    218,
-    110,
+    89,
     9,
+    218,
     0.654
   ); /* Semi-transparent background for better text visibility */
   box-sizing: border-box; /* Includes padding in the element's width */
@@ -1301,4 +1298,8 @@ footer {
   color: rgb(195, 0, 255);
   padding: 3px;
   text-align: left;
+}
+
+.leaguetable table tbody tr:nth-child(even) {
+  background-color: #363636; /* Culoarea dorită pentru liniile pare */
 }

@@ -16,11 +16,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
   // Redirecționare la profilul "Futsal"
-  document
-    .getElementById("futsalProfileButton")
-    .addEventListener("click", function () {
-      window.location.href = `futsalprofile.html?id=${userId}`; // Redirecționează la profilul de futsal al utilizatorului
-    });
+  // document
+  //   .getElementById("futsalProfileButton")
+  //   .addEventListener("click", function () {
+  //     window.location.href = `futsalprofile.html?id=${userId}`; // Redirecționează la profilul de futsal al utilizatorului
+  //   });
 
   const playerSearchInput = document.getElementById("playerSearch");
   const searchSuggestions = document.getElementById("searchSuggestions");

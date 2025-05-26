@@ -18,9 +18,9 @@ body {
 .titletable h2 {
   text-align: left;
   padding: 15px 0px;
-  color: rgb(255, 145, 0);
+  color: rgb(216, 216, 216);
   margin: 0;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 100;
 }
 
@@ -36,6 +36,7 @@ body {
   width: 100%;
   border-collapse: collapse;
   margin-top: 15px;
+  border: none;
 }
 
 .seasontable th,
@@ -43,37 +44,38 @@ body {
   padding: 12px;
   text-align: center;
   font-size: 18px;
+  border: none;
 }
 
 .seasontable th {
-  background-color: #4a4a4a;
+  background-color: #161616;
   color: white;
   text-transform: uppercase;
 }
 
 .seasontable tr {
-  background-color: #f9f9f9;
-  color: #333;
-  border-bottom: 1px solid #ddd;
+  background-color: #211f21;
+  color: #b9b9b9;
+  border-bottom: 1px solid #141414;
 }
 
 .seasontable tr:nth-child(1) {
-  background-color: #ffeecb; /* Exemplu de culoare pentru tr-ul 12 */
+  background-color: #15112a; /* Exemplu de culoare pentru tr-ul 12 */
 }
 .seasontable tr:nth-child(1):hover td {
-  background-color: #ffeac0; /* Exemplu de culoare pentru tr-ul 12 */
+  background-color: #1a1533; /* Exemplu de culoare pentru tr-ul 12 */
 }
-.seasontable tr:nth-child(11) {
-  background-color: #ffcbcb; /* Exemplu de culoare pentru tr-ul 12 */
+.seasontable tr:nth-child(9) {
+  background-color: #2d0c0c; /* Exemplu de culoare pentru tr-ul 12 */
 }
-.seasontable tr:nth-child(11):hover td {
-  background-color: #ffb5b5; /* Exemplu de culoare pentru tr-ul 12 */
+.seasontable tr:nth-child(9):hover td {
+  background-color: #3b1010; /* Exemplu de culoare pentru tr-ul 12 */
 }
-.seasontable tr:nth-child(12) {
-  background-color: #ffcbcb; /* Exemplu de culoare pentru tr-ul 12 */
+.seasontable tr:nth-child(10) {
+  background-color: #2d0c0c; /* Exemplu de culoare pentru tr-ul 12 */
 }
-.seasontable tr:nth-child(12):hover td {
-  background-color: #ffb5b5; /* Exemplu de culoare pentru tr-ul 12 */
+.seasontable tr:nth-child(10):hover td {
+  background-color: #3b1010; /* Exemplu de culoare pentru tr-ul 12 */
 }
 
 table caption {
@@ -85,7 +87,7 @@ table caption {
 }
 
 .seasontable tr:hover td {
-  background-color: #f0f0f0;
+  background-color: #242424;
 }
 
 .seasontable .club {
@@ -102,11 +104,11 @@ table caption {
 }
 
 .seasontable .club span {
-  color: #333;
+  color: #b9b9b9;
   text-align: left;
 }
 .seasontable .club span:hover {
-  color: orange;
+  color: rgb(208, 0, 255);
   transition: 0.2s;
 }
 
@@ -115,7 +117,7 @@ table caption {
 }
 
 .seasontable td:nth-child(3) {
-  color: rgb(255, 145, 0);
+  color: rgb(185, 48, 219);
   font-weight: bold;
 }
 
@@ -169,12 +171,13 @@ table caption {
   padding: 20px;
   max-width: 1600px;
   margin: 20px auto 0;
+  color: rgb(238, 238, 238);
 }
 
 .fixture h2 {
   text-align: left;
   padding: 15px 0px;
-  color: rgb(255, 145, 0);
+  color: rgb(106, 0, 255);
   margin: 0;
   font-size: 25px;
   font-weight: 100;
@@ -219,7 +222,7 @@ table caption {
 .fixturestable td {
   padding: 10px;
   font-size: 14px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #373737;
   text-align: center;
 }
 
@@ -238,11 +241,11 @@ table caption {
 
 /* Stilizarea rândurilor */
 .fixturestable tr:nth-child(even) {
-  background-color: #f9f9f9;
+  background-color: #202020;
 }
 
 .fixturestable tr:hover {
-  background-color: #f0f0f0;
+  background-color: #2a2a2a;
 }
 
 /* Stilizarea echipei */
@@ -260,7 +263,7 @@ table caption {
 
 /* Stilizarea linkurilor */
 .fixturestable a {
-  color: #ff6f00; /* Culoare portocalie */
+  color: #001eff; /* Culoare portocalie */
   text-decoration: none;
 }
 
@@ -306,8 +309,8 @@ table caption {
 .fixturestable .score {
   display: inline-block;
   padding: 5px 10px;
-  background-color: #ff6f00; /* Portocaliu */
-  color: #333; /* Gri foarte închis */
+  background-color: #9757fe; /* Portocaliu */
+  color: #242424; /* Gri foarte închis */
   font-size: 16px;
   border-radius: 4px;
   margin: 0 10px; /* Spațiu între echipe și scor */
