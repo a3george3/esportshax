@@ -9,6 +9,13 @@ const cors = require("cors");
 const multer = require("multer");
 
 const app = express();
+app.use(express.static("images"));
+app.use(express.static("css"));
+app.use(express.static("uploads"));
+app.use(express.static("js"));
+app.use(express.static("public"));
+app.use(express.static(__dirname)); // pentru .html direct din rădăcina proiectului
+
 const port = process.env.PORT || 3000;
 
 // Configurare baza de date MySQL
