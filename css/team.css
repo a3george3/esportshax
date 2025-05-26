@@ -1,0 +1,437 @@
+/* Stil general pentru pagină */
+body {
+  background-image: url("/images/bigbg2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: "Premier League", sans-serif;
+}
+
+.maindiv {
+  margin: 0 80px;
+}
+
+.profile-container {
+  margin: 110px auto 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  background-color: rgb(244, 244, 244);
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 1500px;
+  box-shadow: 0 10px 1px rgba(0, 0, 0, 0.2), 0 -10px 1px rgba(0, 0, 0, 0.2),
+    10px 0 1px rgba(0, 0, 0, 0.2), -10px 0 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Secțiunea din stânga */
+.left-panel {
+  flex: 1;
+}
+
+.teamStats {
+  display: flex;
+  margin: 15px 0;
+  justify-content: space-between;
+}
+
+/* Stiluri pentru numele echipei */
+#teamName {
+  font-size: 30px;
+  color: #ffffff;
+  background-color: #f28911;
+  padding: 5px;
+}
+
+.usernamediv {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ababab;
+}
+
+/* Stiluri pentru imaginea echipei */
+.teamStats img {
+  width: 230px;
+  height: 230px;
+  /* margin: auto; */
+}
+
+/* Secțiunea din dreapta */
+.right-panel {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Stiluri pentru lista jucătorilor */
+/* #playersList img {
+  width: 60px;
+  height: 60px;
+} */
+
+.flag-icon {
+  width: 26px;
+  height: 26px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  color: #f99c07;
+  transition: 0.2s;
+}
+
+.playerDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Stil pentru tabele */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+thead {
+  background-color: #f99c07;
+  color: white;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #edecec; /* Culoare pentru liniile impare */
+}
+
+.right-panel .currentsquad {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+/* Media Queries pentru ecrane mai mici */
+
+/* Ecrane mici (mobile) */
+@media screen and (max-width: 768px) {
+  .profile-container {
+    margin: 100px 0px 20px;
+    flex-direction: column;
+    padding: 30px 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2), 0 -10px 10px rgba(0, 0, 0, 0.2),
+      10px 0 10px rgba(0, 0, 0, 0.2), -10px 0 10px rgba(0, 0, 0, 0.2);
+  }
+  .leaguetable1 {
+    margin: 50px 10px 0;
+  }
+  .trophy-image {
+    width: 110px !important;
+    height: 110px !important;
+  }
+
+  .maindiv {
+    margin: 0;
+  }
+
+  #playersTableBody td {
+    padding: 10px 5px;
+  }
+
+  .teamStats {
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+  }
+
+  .right-panel h2 {
+    font-size: 20px;
+  }
+
+  .teamStats img {
+    width: 180px;
+    height: 180px;
+  }
+
+  #teamName {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .flag-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .right-panel {
+    padding: 10px;
+  }
+
+  th,
+  td {
+    padding: 6px;
+  }
+}
+
+/* Ecrane foarte mici (telefoane mici) */
+@media screen and (max-width: 480px) {
+  .teamStats img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .teamStats {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #teamName {
+    font-size: 18px;
+  }
+
+  .right-panel {
+    padding: 5px;
+  }
+
+  th {
+    font-size: 12px;
+  }
+
+  td {
+    font-size: 15px;
+  }
+
+  .flag-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Container pentru statisticile echipei */
+.teamStats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.infosection {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.player-list-container {
+  overflow-x: auto;
+}
+
+/* Stiluri pentru fiecare secțiune de statistică */
+.statistic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5px;
+}
+
+.stat-label {
+  font-weight: bold;
+}
+
+.playerDiv {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* spațiu între steag și nume */
+}
+
+.playerDiv img {
+  width: 23px;
+  height: 23px;
+}
+
+#mostMatches {
+  background-color: #edecec;
+}
+
+#topAssister {
+  background-color: #edecec;
+}
+
+#foundedSeason {
+  background: linear-gradient(-60deg, #333 0%, #454545 100%);
+  color: #f28911;
+  justify-content: center;
+}
+
+/* Stilul general pentru buton */
+#viewPlayersButton {
+  background-color: #f28911; /* Portocaliu */
+  color: #ffffff; /* Alb */
+  border: none;
+  margin-top: 5px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  font-family: "Premier League", sans-serif;
+}
+
+/* Stiluri pentru buton la hover */
+#viewPlayersButton:hover {
+  background-color: #e07b00; /* Nuantă mai închisă de portocaliu la hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Umbră la hover */
+}
+
+/* Stiluri pentru buton când este apăsat */
+#viewPlayersButton:active {
+  background-color: #d06f00; /* Nuantă și mai închisă de portocaliu la apăsare */
+}
+
+/* Lista de trofee */
+
+.trophies {
+  margin-top: 30px;
+}
+
+#trophiesList {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+#trophiesList {
+  margin-top: 20px;
+  justify-content: center;
+}
+
+#trophiesList li {
+  margin: 5px;
+  display: flex;
+}
+
+.trophies h2 {
+  border-bottom: 1px solid #f99c07;
+  padding: 10px 0;
+  padding-bottom: 5px;
+  margin: 0;
+  color: #f99c07;
+  font-size: 23px;
+}
+
+.trophy-image {
+  width: 140px;
+  height: 140px;
+  max-width: 100%;
+}
+
+#leaguetable1 {
+  /* flex: 33%; */
+  margin: 30px 10px;
+  /* padding: 20px; */
+  /* border: 1px solid #ddd; */
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#leagueTableBody1 tr:nth-child(1) {
+  background-color: #fca950;
+}
+
+#leagueTableBody1 tr:nth-child(11) {
+  background-color: #fdadad;
+}
+#leagueTableBody1 tr:nth-child(12) {
+  background-color: #fdadad;
+}
+
+.dashboard h2 {
+  padding: 15px 20px;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: 200;
+  /* text-transform: uppercase; */
+}
+
+.h2table1 {
+  width: 100%;
+  position: relative;
+  padding: 10px;
+  background: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+  /* background-image: url(../i/elements/backgrounds/sm-header-pattern.svg); */
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  border-radius: 8px 8px 0 0;
+  color: white;
+}
+
+.leaguetable1 {
+  /* flex: 20%; */
+  margin-top: 50px;
+  flex: 1;
+  min-width: 300px;
+}
+
+.leaguetable1 table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.leaguetable1 .club1 {
+  display: flex;
+  align-items: center;
+  color: #3d2708;
+}
+
+.leaguetable1 .club1:hover {
+  display: flex;
+  align-items: center;
+  color: #3d2708;
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+}
+
+.leaguetable1 td img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.leaguetable1 th,
+.leaguetable1 td {
+  /* text-align: left; */
+  padding: 7px;
+  color: #3d2708;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  font-size: 16px;
+}
+
+.leaguetable1 th {
+  color: rgb(163, 154, 136);
+  font-size: 12px;
+  padding: 10px;
+}
+
+.thead1 {
+  background-color: white;
+}

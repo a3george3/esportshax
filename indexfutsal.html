@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Sports HaxBall</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="css/indexfutsal.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/982b8fc2a9.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"> -->
+    <link
+      href="https://fonts.cdnfonts.com/css/premier-league"
+      rel="stylesheet"
+    />
+    <script src="indexfutsal.js"></script>
+    <script src="login.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href=""><img src="images/logofutsal.png" alt="" /></a>
+        </div>
+        <p id="bigfutsal">
+          <span><a href="index.html" class="bigspan">big</a></span> /
+          <span><a href="indexfutsal.html" class="futsalspan">futsal</a></span>
+        </p>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li>
+            <form id="searchForm" class="search-form">
+              <input
+                type="text"
+                id="playerSearch"
+                placeholder="Search a player!"
+                autocomplete="off"
+              />
+              <ul id="searchSuggestions" class="suggestions"></ul>
+            </form>
+          </li>
+          <li><a href="indexfutsal.html">Home</a></li>
+          <li><a href="prosettings.html">PRO SETTINGS</a></li>
+          <li><a href="elo.html">ELO</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn"
+              >LEAGUE<img src="images/arrow.png" alt="" class="downarrow"
+            /></a>
+            <div class="dropdown-content">
+              <a href="futsalseasons/futsalseason1.html">Division 1</a>
+              <a href="futsalseasons/futsalseason1d2.html">Division 2</a>
+              <a href="futsalstatistics.html">STATISTICS</a>
+              <a href="/preseason/futsalpreseason.html">Preseason CUP</a>
+            </div>
+          </li>
+          <li id="auth-link">
+            <a href="login.html" class="login-button">Log-in</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="dashboard">
+      <div class="leaguetable">
+        <div class="h2table"><h2>Division 1</h2></div>
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th></th>
+              <th>PTS</th>
+              <th>PL</th>
+              <th>GD</th>
+            </tr>
+          </thead>
+          <tbody id="leagueTableBody"></tbody>
+        </table>
+        <div class="h2table2"><h2>Division 2</h2></div>
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th></th>
+              <th>PTS</th>
+              <th>PL</th>
+              <th>GD</th>
+            </tr>
+          </thead>
+          <tbody id="leagueTableBodyD2"></tbody>
+        </table>
+      </div>
+
+      <div class="imgarticle">
+        <div class="image-container">
+          <a href=""
+            ><img
+              src="images/futsalbg.png"
+              alt="Sample Image"
+              class="responsive-image"
+            />
+            <div class="image-text">E-SPORTS FUTSAL</div></a
+          >
+        </div>
+        <img
+          src="images/standard.gif"
+          alt="Futsal Animation"
+          class="responsive-gif"
+        />
+      </div>
+    </div>
+
+    <section class="cards-section">
+      <div class="cards-container">
+        <div class="stats-card-container">
+          <h4>Goals</h4>
+          <div class="card" id="playersStatsCard"></div>
+        </div>
+        <div class="stats-card-container">
+          <h4>Assists</h4>
+          <div class="card" id="playersAssistsCard"></div>
+        </div>
+        <div class="stats-card-container">
+          <h4>Clean Sheets</h4>
+          <div class="card" id="playersCSCard">Card 1</div>
+        </div>
+        <div class="stats-card-container">
+          <h4>GLS. SCORED</h4>
+          <div class="card" id="teamsGoalsCard">Card 1</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="latest-section">
+      <div class="latest-transfers">
+        <div class="leaguetable md1table">
+          <div class="h2table"><h2>MATCHDAY #1 D1</h2></div>
+          <table>
+            <thead>
+              <tr>
+                <th>HOME</th>
+                <th>SCORE</th>
+                <th>AWAY</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="team-cell">
+                  <a
+                    href="futsalteam.html?teamName=Don%20Syndicate"
+                    class="afix"
+                  >
+                    <div class="teamfix">
+                      <img
+                        src="images/don.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>Don</p>
+                    </div>
+                  </a>
+                </td>
+                <td><p>-</p></td>
+                <td class="team-cell">
+                  <a href="futsalteam.html?teamName=napolireal" class="afix">
+                    <div class="teamfix">
+                      <img
+                        src="images/napolireal.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>NPR</p>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="team-cell">
+                  <a href="futsalteam.html?teamName=sechszwei" class="afix">
+                    <div class="teamfix">
+                      <img
+                        src="images/sechszwei.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>SCH</p>
+                    </div>
+                  </a>
+                </td>
+                <td><p>-</p></td>
+                <td class="team-cell">
+                  <a href="futsalteam.html?teamName=neXtPlease!" class="afix">
+                    <div class="teamfix">
+                      <img
+                        src="images/nextplease.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>nXP!</p>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="team-cell">
+                  <a href="futsalteam.html?teamName=Dawgy%20Dogs" class="afix">
+                    <div class="teamfix">
+                      <img
+                        src="images/dawgy.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>DD</p>
+                    </div>
+                  </a>
+                </td>
+                <td><p>-</p></td>
+                <td class="team-cell">
+                  <a href="futsalteam.html?teamName=feisar" class="afix">
+                    <div class="teamfix">
+                      <img
+                        src="images/feisar.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>FEI</p>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="team-cell">
+                  <a href="team.html?teamName=Pippo%20SC" class="afix">
+                    <div class="teamfix">
+                      <img
+                        src="images/pippo.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>PSC</p>
+                    </div>
+                  </a>
+                </td>
+                <td><p>-</p></td>
+                <td class="team-cell">
+                  <a href="futsalteam.html?teamName=napolireal" class="afix">
+                    <div class="teamfix">
+                      <img
+                        src="images/blackout.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>BO</p>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="leaguetable md2table">
+          <div class="h2table"><h2>MATCHDAY #1 D2</h2></div>
+          <table>
+            <thead>
+              <tr>
+                <th>HOME</th>
+                <th>SCORE</th>
+                <th>AWAY</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="team-cell">
+                  <a href="futsalteam.html?teamName=FC%20Pessoux" class="afix">
+                    <div class="teamfix">
+                      <img
+                        src="images/pessoux.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>FCP</p>
+                    </div>
+                  </a>
+                </td>
+                <td><p>-</p></td>
+                <td class="team-cell">
+                  <a href="futsalteam.html?teamName=h2k" class="afix">
+                    <div class="teamfix">
+                      <img
+                        src="images/h2k.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>H2k</p>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="team-cell">
+                  <a href="futsalteam.html?teamName=Beyond%20TW" class="afix">
+                    <div class="teamfix">
+                      <img
+                        src="images/btw.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>BTW</p>
+                    </div>
+                  </a>
+                </td>
+                <td><p>-</p></td>
+                <td class="team-cell">
+                  <a href="futsalteam.html?teamName=enforcers" class="afix">
+                    <div class="teamfix">
+                      <img
+                        src="images/enforcers.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>ENF</p>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="team-cell">
+                  <a
+                    href="futsalteam.html?teamName=Kickin%20Bobers"
+                    class="afix"
+                  >
+                    <div class="teamfix">
+                      <img
+                        src="images/bober.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>KB</p>
+                    </div>
+                  </a>
+                </td>
+                <td><p>-</p></td>
+                <td class="team-cell">
+                  <a href="futsalteam.html?teamName=varazdin" class="afix">
+                    <div class="teamfix">
+                      <img
+                        src="images/varazdin.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>VAR</p>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="team-cell">
+                  <a
+                    href="futsalteam.html?teamName=Karmine%20Corp"
+                    class="afix"
+                  >
+                    <div class="teamfix">
+                      <img
+                        src="images/karmine.webp"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>KAR</p>
+                    </div>
+                  </a>
+                </td>
+                <td><p>-</p></td>
+                <td class="team-cell">
+                  <a href="futsalteam.html?teamName=Thunder%20Hax" class="afix">
+                    <div class="teamfix">
+                      <img
+                        src="images/thunderhax.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>TH</p>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="leaguetable md3table">
+          <div class="h2table"><h2>MATCHDAY #1 D1</h2></div>
+          <table>
+            <thead>
+              <tr>
+                <th>HOME</th>
+                <th>SCORE</th>
+                <th>AWAY</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="team-cell">
+                  <a href="futsalteam.html?teamName=FC%20Pessoux" class="afix">
+                    <div class="teamfix">
+                      <img
+                        src="images/pessoux.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>FCP</p>
+                    </div>
+                  </a>
+                </td>
+                <td><p>-</p></td>
+                <td class="team-cell">
+                  <a href="futsalteam.html?teamName=h2k" class="afix">
+                    <div class="teamfix">
+                      <img
+                        src="images/h2k.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>H2k</p>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="team-cell">
+                  <a href="futsalteam.html?teamName=Beyond%20TW" class="afix">
+                    <div class="teamfix">
+                      <img
+                        src="images/btw.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>BTW</p>
+                    </div>
+                  </a>
+                </td>
+                <td><p>-</p></td>
+                <td class="team-cell">
+                  <a href="futsalteam.html?teamName=enforcers" class="afix">
+                    <div class="teamfix">
+                      <img
+                        src="images/enforcers.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>ENF</p>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="team-cell">
+                  <a
+                    href="futsalteam.html?teamName=Kickin%20Bobers"
+                    class="afix"
+                  >
+                    <div class="teamfix">
+                      <img
+                        src="images/bober.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>KB</p>
+                    </div>
+                  </a>
+                </td>
+                <td><p>-</p></td>
+                <td class="team-cell">
+                  <a href="futsalteam.html?teamName=varazdin" class="afix">
+                    <div class="teamfix">
+                      <img
+                        src="images/varazdin.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>VAR</p>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="team-cell">
+                  <a
+                    href="futsalteam.html?teamName=Karmine%20Corp"
+                    class="afix"
+                  >
+                    <div class="teamfix">
+                      <img
+                        src="images/karmine.webp"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>KAR</p>
+                    </div>
+                  </a>
+                </td>
+                <td><p>-</p></td>
+                <td class="team-cell">
+                  <a href="futsalteam.html?teamName=Thunder%20Hax" class="afix">
+                    <div class="teamfix">
+                      <img
+                        src="images/thunderhax.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>TH</p>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <a href="/season3.html" class="button">MORE FIXTURES & RESULTS</a>
+      </div>
+      <div class="latest-news">
+        <h2>Latest News</h2>
+        <div class="latest-news-card">
+          <div class="news-card">
+            <img
+              src="images/futsalbg.png"
+              alt="Sample Image"
+              class="news-card-img"
+            />
+            <div class="news-card-text">
+              NEW E-SPORTS FUTSAL LEAGUE!
+              <span class="extra-text"> NEW E-SPORTS FUTSAL LEAGUE!</span>
+            </div>
+          </div>
+          <div class="news-card">
+            <img
+              src="images/futsalbg.png"
+              alt="Sample Image"
+              class="news-card-img"
+            />
+            <div class="news-card-text">
+              NEW E-SPORTS FUTSAL LEAGUE!
+              <span class="extra-text"> NEW E-SPORTS FUTSAL LEAGUE!</span>
+            </div>
+          </div>
+          <div class="news-card">
+            <img
+              src="images/futsalbg.png"
+              alt="Sample Image"
+              class="news-card-img"
+            />
+            <div class="news-card-text">
+              NEW E-SPORTS FUTSAL LEAGUE!
+              <span class="extra-text"> NEW E-SPORTS FUTSAL LEAGUE!</span>
+            </div>
+          </div>
+          <div class="news-card">
+            <img
+              src="images/futsalbg.png"
+              alt="Sample Image"
+              class="news-card-img"
+            />
+            <div class="news-card-text">
+              NEW E-SPORTS FUTSAL LEAGUE!
+              <span class="extra-text">NEW E-SPORTS FUTSAL LEAGUE!</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>About Us</h3>
+          <p>
+            We are one of the biggest
+            <span style="color: orange">Haxball</span> communities.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul class="quick-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">ELO</a></li>
+            <li><a href="/users.html">USERS</a></li>
+            <li><a href="/futsalteams.html">TEAMS</a></li>
+          </ul>
+        </div>
+        <div class="registeredusers">
+          <p class="registered"></p>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p><span style="color: orange">DISCORD:</span> Hakut#1757</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 E-SPORTS HAXBALL. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

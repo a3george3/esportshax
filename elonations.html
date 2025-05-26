@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-2YG8Q72CPC"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-2YG8Q72CPC");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Sports HaxBall</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="css/elo.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/982b8fc2a9.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"> -->
+    <link
+      href="https://fonts.cdnfonts.com/css/premier-league"
+      rel="stylesheet"
+    />
+    <script src="elonations.js"></script>
+    <script src="login.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href=""><img src="images/logo2.png" alt="" /></a>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li>
+            <form id="searchForm" class="search-form">
+              <input
+                type="text"
+                id="playerSearch"
+                placeholder="Search a player!"
+                autocomplete="off"
+              />
+              <ul id="searchSuggestions" class="suggestions"></ul>
+            </form>
+          </li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="prosettings.html">PRO SETTINGS</a></li>
+          <li><a href="elo.html">ELO</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn"
+              >LEAGUE<img src="images/arrow.png" alt="" class="downarrow"
+            /></a>
+            <div class="dropdown-content">
+              <a href="season3.html">TABLE</a>
+              <a href="statistics.html">STATISTICS</a>
+            </div>
+          </li>
+          <li id="auth-link">
+            <a href="login.html" class="login-button">Log-in</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section>
+      <div class="main-page">
+        <div class="table-bypoints">
+          <div id="h1rank" class="h1rank">
+            <img src="images/ranking.png" alt="" />
+            <h1 id="dropdownButton">NATIONS RANKING</h1>
+            <img src="images/down-arrow.png" style="width: 15px" alt="" />
+            <div id="dropdownContent" class="dropdown-content">
+              <a href="elo.html"
+                ><h1 id="alltimeRanking" style="color: black">
+                  ALL TIME RANKING
+                </h1></a
+              >
+              <a href="elonations.html"
+                ><h1 id="nationsRanking" style="color: orange">
+                  NATIONS Ranking
+                </h1></a
+              >
+            </div>
+          </div>
+          <div id="player-item"></div>
+          <div id="pagination" class="pagination">
+            <button id="prev-button" class="page-link"><</button>
+            <button id="next-button" class="page-link">></button>
+          </div>
+          <div class="points">
+            <p class="place1">1st PLACE = 5 POINTS</p>
+            <p class="place2">2nd PLACE = 3 POINTS</p>
+            <p class="place3">3rd PLACE = 2 POINTS</p>
+            <p class="place410">4-10th PLACE = 1 POINT</p>
+          </div>
+        </div>
+        <div class="team-list">
+          <h1>HALL OF FAME</h1>
+          <div class="column">
+            <div class="team-item">
+              <div class="team-left">
+                <button class="dropdown-button">
+                  <img
+                    src="images/down-arrow.png"
+                    alt=""
+                    class="dropdown-img"
+                  />
+                </button>
+                <img src="images/italy.png" alt="Team Logo" class="team-logo" />
+                <span class="team-name">Enzo</span>
+              </div>
+              <div class="team-right">
+                <span class="team-wins">6</span>
+                <img
+                  src="images/trophy (1).png"
+                  alt="Wins Icon"
+                  class="wins-icon"
+                />
+              </div>
+            </div>
+            <div class="additional-text">
+              ELO WINNER: Season 7, Season 9, Season 10, Season 12, Season 16,
+              Season 17
+            </div>
+          </div>
+          <div class="column">
+            <div class="team-item">
+              <div class="team-left">
+                <button class="dropdown-button">
+                  <img src="images/down-arrow.png" alt="" />
+                </button>
+                <img
+                  src="images/poland.png"
+                  alt="Team Logo"
+                  class="team-logo"
+                />
+                <span class="team-name">kyo</span>
+              </div>
+              <div class="team-right">
+                <span class="team-wins">2</span>
+                <img
+                  src="images/trophy (1).png"
+                  alt="Wins Icon"
+                  class="wins-icon"
+                />
+              </div>
+            </div>
+            <div class="additional-text">ELO WINNER: Season 2, Season 3</div>
+          </div>
+          <div class="column">
+            <div class="team-item">
+              <div class="team-left">
+                <button class="dropdown-button">
+                  <img src="images/down-arrow.png" alt="" />
+                </button>
+                <img
+                  src="images/romania.png"
+                  alt="Team Logo"
+                  class="team-logo"
+                />
+                <span class="team-name">Hakut</span>
+              </div>
+              <div class="team-right">
+                <span class="team-wins">2</span>
+                <img
+                  src="images/trophy (1).png"
+                  alt="Wins Icon"
+                  class="wins-icon"
+                />
+              </div>
+            </div>
+            <div class="additional-text">ELO WINNER: Season 1, Season 13</div>
+          </div>
+          <div class="column">
+            <div class="team-item">
+              <div class="team-left">
+                <button class="dropdown-button">
+                  <img src="images/down-arrow.png" alt="" />
+                </button>
+                <img
+                  src="images/germany.png"
+                  alt="Team Logo"
+                  class="team-logo"
+                />
+                <span class="team-name">Akin</span>
+              </div>
+              <div class="team-right">
+                <span class="team-wins">2</span>
+                <img
+                  src="images/trophy (1).png"
+                  alt="Wins Icon"
+                  class="wins-icon"
+                />
+              </div>
+            </div>
+            <div class="additional-text">ELO WINNER: Season 5, Season 6</div>
+          </div>
+          <div class="column">
+            <div class="team-item">
+              <div class="team-left">
+                <button class="dropdown-button">
+                  <img src="images/down-arrow.png" alt="" />
+                </button>
+                <img
+                  src="images/france.png"
+                  alt="Team Logo"
+                  class="team-logo"
+                />
+                <span class="team-name">Sosa</span>
+              </div>
+              <div class="team-right">
+                <span class="team-wins">1</span>
+                <img
+                  src="images/trophy (1).png"
+                  alt="Wins Icon"
+                  class="wins-icon"
+                />
+              </div>
+            </div>
+            <div class="additional-text">ELO WINNER: Season 4</div>
+          </div>
+          <div class="column">
+            <div class="team-item">
+              <div class="team-left">
+                <button class="dropdown-button">
+                  <img src="images/down-arrow.png" alt="" />
+                </button>
+                <img
+                  src="images/israel.png"
+                  alt="Team Logo"
+                  class="team-logo"
+                />
+                <span class="team-name">Musonda</span>
+              </div>
+              <div class="team-right">
+                <span class="team-wins">1</span>
+                <img
+                  src="images/trophy (1).png"
+                  alt="Wins Icon"
+                  class="wins-icon"
+                />
+              </div>
+            </div>
+            <div class="additional-text">ELO WINNER: Season 8</div>
+          </div>
+          <div class="column">
+            <div class="team-item">
+              <div class="team-left">
+                <button class="dropdown-button">
+                  <img src="images/down-arrow.png" alt="" />
+                </button>
+                <img
+                  src="images/israel.png"
+                  alt="Team Logo"
+                  class="team-logo"
+                />
+                <span class="team-name">Phami</span>
+              </div>
+              <div class="team-right">
+                <span class="team-wins">1</span>
+                <img
+                  src="images/trophy (1).png"
+                  alt="Wins Icon"
+                  class="wins-icon"
+                />
+              </div>
+            </div>
+            <div class="additional-text">ELO WINNER: Season 14</div>
+          </div>
+          <div class="column">
+            <div class="team-item">
+              <div class="team-left">
+                <button class="dropdown-button">
+                  <img src="images/down-arrow.png" alt="" />
+                </button>
+                <img
+                  src="images/poland.png"
+                  alt="Team Logo"
+                  class="team-logo"
+                />
+                <span class="team-name">J1</span>
+              </div>
+              <div class="team-right">
+                <span class="team-wins">1</span>
+                <img
+                  src="images/trophy (1).png"
+                  alt="Wins Icon"
+                  class="wins-icon"
+                />
+              </div>
+            </div>
+            <div class="additional-text">ELO WINNER: Season 15</div>
+          </div>
+          <div class="column">
+            <div class="team-item">
+              <div class="team-left">
+                <button class="dropdown-button">
+                  <img src="images/down-arrow.png" alt="" />
+                </button>
+                <img
+                  src="images/portugal.png"
+                  alt="Team Logo"
+                  class="team-logo"
+                />
+                <span class="team-name">-Renatooo</span>
+              </div>
+              <div class="team-right">
+                <span class="team-wins">1</span>
+                <img
+                  src="images/trophy (1).png"
+                  alt="Wins Icon"
+                  class="wins-icon"
+                />
+              </div>
+            </div>
+            <div class="additional-text">ELO WINNER: Season 11</div>
+          </div>
+          <!-- Repeat for more teams -->
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>About Us</h3>
+          <p>
+            We are one of the biggest
+            <span style="color: orange">Haxball</span> communities.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul class="quick-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="elo.html" style="color: orange">ELO</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p><span style="color: orange">DISCORD:</span> Hakut#1757</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 E-SPORTS HAXBALL. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actualizare Jucător</title>
+    <link rel="stylesheet" href="css/updatePlayer.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Actualizare Statistici Jucător</h1>
+      <form id="updateForm">
+        <label for="playerName">Nume Jucător:</label>
+        <input type="text" id="playerName" required autocomplete="off" />
+        <ul id="suggestions" class="suggestions"></ul>
+
+        <label for="matchesPlayed">Meciuri Jucate:</label>
+        <input type="number" id="matchesPlayed" required />
+
+        <label for="goals">Goluri:</label>
+        <input type="number" id="goals" required />
+
+        <label for="assists">Assist-uri:</label>
+        <input type="number" id="assists" required />
+
+        <label for="cleansheets">Clean Sheets:</label>
+        <input type="number" id="cleansheets" required />
+
+        <label for="teamName">Echipa:</label>
+        <select id="teamName">
+          <option value="">None</option>
+        </select>
+        <label for="seasonName">Sezon:</label>
+        <select id="seasonName" required>
+          <option value="">Selectează un sezon</option>
+        </select>
+
+        <button type="submit">Actualizează</button>
+      </form>
+      <div id="message"></div>
+    </div>
+
+    <script src="updatePlayer.js"></script>
+  </body>
+</html>

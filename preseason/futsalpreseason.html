@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Sports HaxBall</title>
+    <link rel="icon" type="image/x-icon" href="//images/favicon.ico" />
+    <link rel="stylesheet" href="/css/indexfutsal.css" />
+    <link rel="stylesheet" href="/css/futsalpreseason.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/982b8fc2a9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.cdnfonts.com/css/premier-league"
+      rel="stylesheet"
+    />
+    <script src="/login.js"></script>
+    <script src="futsalpreseason.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href=""><img src="/images/logofutsal.png" alt="" /></a>
+        </div>
+        <p id="bigfutsal">
+          <span><a href="/index.html" class="bigspan">big</a></span> /
+          <span><a href="/indexfutsal.html" class="futsalspan">futsal</a></span>
+        </p>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li>
+            <form id="searchForm" class="search-form">
+              <input
+                type="text"
+                id="playerSearch"
+                placeholder="Search a player!"
+                autocomplete="off"
+              />
+              <ul id="searchSuggestions" class="suggestions"></ul>
+            </form>
+          </li>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/prosettings.html">PRO SETTINGS</a></li>
+          <li><a href="/elo.html">ELO</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn"
+              >LEAGUE<img src="/images/arrow.png" alt="" class="downarrow"
+            /></a>
+            <div class="dropdown-content">
+              <a href="futsalseasons/futsalseason1.html">Division 1</a>
+              <a href="futsalseasons/futsalseason1d2.html">Division 2</a>
+              <a href="/statistics.html">STATISTICS</a>
+            </div>
+          </li>
+          <li id="auth-link">
+            <a href="login.html" class="login-button">Log-in</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </body>
+  <!-- Groups Section -->
+  <div class="groups-section">
+    <h1 class="groupsh1">
+      GROUPS <span style="color: rgb(174, 0, 174)">/</span> FINAL STAGES
+    </h1>
+    <!-- Group 1 -->
+    <div class="group-container">
+      <div class="group-title">Group A</div>
+      <table class="teams-table">
+        <thead>
+          <tr>
+            <th class="position-col"></th>
+            <th>Team</th>
+            <th>GP</th>
+            <th>W</th>
+            <th>D</th>
+            <th>L</th>
+            <th>PTS</th>
+          </tr>
+        </thead>
+        <tbody class="group-teams">
+          <tr>
+            <td>1</td>
+            <td>
+              <div class="team-info">
+                <img
+                  src="/images/nextplease.png"
+                  alt="Team 1 Logo"
+                  class="team-logo1"
+                />
+                neXtPlease!
+              </div>
+            </td>
+            <td>4</td>
+            <td>4</td>
+            <td>0</td>
+            <td>0</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>
+              <div class="team-info">
+                <img
+                  src="/images/sechszwei.png"
+                  alt="Team 1 Logo"
+                  class="team-logo1"
+                />
+                sechszwei
+              </div>
+            </td>
+            <td>4</td>
+            <td>3</td>
+            <td>0</td>
+            <td>1</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>
+              <div class="team-info">
+                <img
+                  src="/images/thunderhax.png"
+                  alt="Team 1 Logo"
+                  class="team-logo1"
+                />
+                Thunder Hax
+              </div>
+            </td>
+            <td>4</td>
+            <td>1</td>
+            <td>0</td>
+            <td>3</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>
+              <div class="team-info">
+                <img
+                  src="/images/fnf.png"
+                  alt="Team 1 Logo"
+                  class="team-logo1"
+                />
+                Fast & Furious
+              </div>
+            </td>
+            <td>4</td>
+            <td>2</td>
+            <td>0</td>
+            <td>2</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>
+              <div class="team-info">
+                <img src="/images/.png" alt="Team 1 Logo" class="team-logo1" />
+                War Plane
+              </div>
+            </td>
+            <td>4</td>
+            <td>0</td>
+            <td>0</td>
+            <td>4</td>
+            <td>0</td>
+          </tr>
+        </tbody>
+      </table>
+      <button class="show-fixtures-btn">+ SHOW FIXTURES</button>
+      <div class="fixtures">
+        <p>neXtPlease! 10-0 sechszwei</p>
+        <p>neXtPlease! 3-0 Thunder Hax</p>
+        <p>neXtPlease! 14-4 Fast & Furious</p>
+        <p>neXtPlease! 3-0 War Plane</p>
+        <p>sechszwei 3-0 Thunder Hax</p>
+        <p>sechszwei 3-0 Fast & Furious</p>
+        <p>sechszwei 3-0 War Plane</p>
+        <p>Thunder Hax 0-3 Fast & Furious</p>
+        <p>Thunder Hax 3-0 War Plane</p>
+        <p>Fast & Furious 3-0 War Plane</p>
+      </div>
+    </div>
+
+    <!-- Repeat for Group B, C, D, E -->
+
+    <div class="group-container">
+      <div class="group-title">Group B</div>
+      <table class="teams-table">
+        <thead>
+          <tr>
+            <th class="position-col"></th>
+            <th>Team</th>
+            <th>GP</th>
+            <th>W</th>
+            <th>D</th>
+            <th>L</th>
+            <th>PTS</th>
+          </tr>
+        </thead>
+        <tbody class="group-teams">
+          <tr>
+            <td>1</td>
+            <td>
+              <div class="team-info">
+                <img
+                  src="/images/dawgy.png"
+                  alt="Team 1 Logo"
+                  class="team-logo1"
+                />
+                Dawgy Dogs
+              </div>
+            </td>
+            <td>4</td>
+            <td>4</td>
+            <td>0</td>
+            <td>0</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>
+              <div class="team-info">
+                <img
+                  src="/images/pippo.png"
+                  alt="Team 1 Logo"
+                  class="team-logo1"
+                />
+                Pippo Sowlos Club
+              </div>
+            </td>
+            <td>4</td>
+            <td>2</td>
+            <td>0</td>
+            <td>2</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>
+              <div class="team-info">
+                <img
+                  src="/images/karmine.webp"
+                  alt="Team 1 Logo"
+                  class="team-logo1"
+                />
+                Karmine Corp
+              </div>
+            </td>
+            <td>4</td>
+            <td>3</td>
+            <td>0</td>
+            <td>1</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>
+              <div class="team-info">
+                <img
+                  src="/images/h2k.png"
+                  alt="Team 1 Logo"
+                  class="team-logo1"
+                />
+                H2k
+              </div>
+            </td>
+            <td>4</td>
+            <td>1</td>
+            <td>0</td>
+            <td>3</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>
+              <div class="team-info">
+                <img
+                  src="/images/maracaibo.png"
+                  alt="Team 1 Logo"
+                  class="team-logo1"
+                />
+                Maracaibo
+              </div>
+            </td>
+            <td>4</td>
+            <td>0</td>
+            <td>0</td>
+            <td>4</td>
+            <td>0</td>
+          </tr>
+        </tbody>
+      </table>
+      <button class="show-fixtures-btn">+ SHOW FIXTURES</button>
+      <div class="fixtures">
+        <p>Dawgy Dogs 11-2 Pippo</p>
+        <p>Dawgy Dogs 7-5 Karmine Club</p>
+        <p>Dawgy Dogs 5-0 H2K</p>
+        <p>Dawgy Dogs 3-0 Maracaibo</p>
+        <p>Pippo 7-14 Karmine Club</p>
+        <p>Pippo 3-0 H2K</p>
+        <p>Pippo 13-3 Maracaibo</p>
+        <p>Karmine Club 9-4 H2K</p>
+        <p>Karmine Club 3-0 Maracaibo</p>
+        <p>H2K 3-0 Maracaibo</p>
+      </div>
+    </div>
+
+    <div class="group-container">
+      <div class="group-title">Group C</div>
+      <table class="teams-table">
+        <thead>
+          <tr>
+            <th class="position-col"></th>
+            <th>Team</th>
+            <th>GP</th>
+            <th>W</th>
+            <th>D</th>
+            <th>L</th>
+            <th>PTS</th>
+          </tr>
+        </thead>
+        <tbody class="group-teams">
+          <tr>
+            <td>1</td>
+            <td>
+              <div class="team-info">
+                <img
+                  src="/images/napolireal.png"
+                  alt="Team 1 Logo"
+                  class="team-logo1"
+                />
+                Napolireal
+              </div>
+            </td>
+            <td>4</td>
+            <td>4</td>
+            <td>0</td>
+            <td>0</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>
+              <div class="team-info">
+                <img
+                  src="/images/btw.png"
+                  alt="Team 1 Logo"
+                  class="team-logo1"
+                />
+                Beyond The Walls
+              </div>
+            </td>
+            <td>4</td>
+            <td>3</td>
+            <td>0</td>
+            <td>1</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>
+              <div class="team-info">
+                <img
+                  src="/images/bober.png"
+                  alt="Team 1 Logo"
+                  class="team-logo1"
+                />
+                Kickin Bober
+              </div>
+            </td>
+            <td>4</td>
+            <td>1</td>
+            <td>1</td>
+            <td>2</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>
+              <div class="team-info">
+                <img
+                  src="/images/vvv.png"
+                  alt="Team 1 Logo"
+                  class="team-logo1"
+                />
+                VVV
+              </div>
+            </td>
+            <td>4</td>
+            <td>1</td>
+            <td>1</td>
+            <td>2</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>
+              <div class="team-info">
+                <img
+                  src="/images/arigato.png"
+                  alt="Team 1 Logo"
+                  class="team-logo1"
+                />
+                Arigato
+              </div>
+            </td>
+            <td>4</td>
+            <td>0</td>
+            <td>0</td>
+            <td>4</td>
+            <td>0</td>
+          </tr>
+        </tbody>
+      </table>
+      <button class="show-fixtures-btn">+ SHOW FIXTURES</button>
+      <div class="fixtures">
+        <p>NapoliReal 12-2 Beyond the Walls</p>
+        <p>NapoliReal 10-0 Kickin Bobers</p>
+        <p>NapoliReal 11-1 VVV</p>
+        <p>NapoliReal 3-0 Arigato</p>
+        <p>Beyond the Walls 11-7 Kickin Bobers</p>
+        <p>Beyond the Walls 10-4 VVV</p>
+        <p>Beyond the Walls 3-0 Arigato</p>
+        <p>Kickin Bobers 8-8 VVV</p>
+        <p>Kickin Bobers 3-0 Arigato</p>
+        <p>VVV 3-0 Arigato</p>
+      </div>
+    </div>
+
+    <div class="group-container">
+      <div class="group-title">Group D</div>
+      <table class="teams-table">
+        <thead>
+          <tr>
+            <th class="position-col"></th>
+            <th>Team</th>
+            <th>GP</th>
+            <th>W</th>
+            <th>D</th>
+            <th>L</th>
+            <th>PTS</th>
+          </tr>
+        </thead>
+        <tbody class="group-teams">
+          <tr>
+            <td>1</td>
+            <td>
+              <div class="team-info">
+                <img
+                  src="/images/feisar.png"
+                  alt="Team 1 Logo"
+                  class="team-logo1"
+                />
+                feisar
+              </div>
+            </td>
+            <td>3</td>
+            <td>3</td>
+            <td>0</td>
+            <td>0</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>
+              <div class="team-info">
+                <img
+                  src="/images/don.png"
+                  alt="Team 1 Logo"
+                  class="team-logo1"
+                />
+                Don Syndicate
+              </div>
+            </td>
+            <td>3</td>
+            <td>0</td>
+            <td>0</td>
+            <td>3</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>
+              <div class="team-info">
+                <img
+                  src="/images/pessoux.png"
+                  alt="Team 1 Logo"
+                  class="team-logo1"
+                />
+                FC Pessoux
+              </div>
+            </td>
+            <td>3</td>
+            <td>2</td>
+            <td>0</td>
+            <td>1</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>
+              <div class="team-info">
+                <img
+                  src="/images/enforcers.png"
+                  alt="Team 1 Logo"
+                  class="team-logo1"
+                />
+                Enforcers
+              </div>
+            </td>
+            <td>3</td>
+            <td>1</td>
+            <td>0</td>
+            <td>2</td>
+            <td>3</td>
+          </tr>
+        </tbody>
+      </table>
+      <button class="show-fixtures-btn">+ SHOW FIXTURES</button>
+      <div class="fixtures">
+        <p>Feisar 3-0 Don Syndicate</p>
+        <p>Feisar 11-1 FC Pessoux</p>
+        <p>Feisar 15-5 Enforcers</p>
+        <p>Don Syndicate 0-3 FC Pessoux</p>
+        <p>Don Syndicate 0-3 Enforcers</p>
+        <p>FC Pessoux 5-4 Enforcers</p>
+      </div>
+    </div>
+    <div class="finalstages">
+      <div class="matches-container">
+        <div class="match">
+          <span class="match-stage">QF</span>
+          <span class="team team1">FC Pessoux</span>
+          <span class="score">0-5</span>
+          <span class="team team2">Napolireal</span>
+        </div>
+        <div class="match">
+          <span class="match-stage">QF</span>
+          <span class="team team1">neXtPlease!</span>
+          <span class="score">9-6</span>
+          <span class="team team2">Karmine Corp</span>
+        </div>
+        <div class="match">
+          <span class="match-stage">QF</span>
+          <span class="team team1">Feisar</span>
+          <span class="score">10-4</span>
+          <span class="team team2">Beyond The Walls</span>
+        </div>
+        <div class="match">
+          <span class="match-stage">QF</span>
+          <span class="team team1">Sechszwei</span>
+          <span class="score">0-3</span>
+          <span class="team team2">Dawgy Dogs</span>
+        </div>
+      </div>
+      <div class="matches-container sf-container">
+        <div class="match">
+          <span class="match-stage">SF</span>
+          <span class="team team1">neXtPlease!</span>
+          <span class="score">3-5</span>
+          <span class="team team2">Napolireal</span>
+        </div>
+        <div class="match">
+          <span class="match-stage">SF</span>
+          <span class="team team1">Dawgy Dogs</span>
+          <span class="score">6-5</span>
+          <span class="team team2">Feisar</span>
+        </div>
+      </div>
+      <div class="matches-container final-container">
+        <div class="match">
+          <span class="match-stage">FINAL</span>
+          <span class="team team1">Dawgy Dogs</span>
+          <span class="score">2-9</span>
+          <span class="team team2">Napolireal</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</html>

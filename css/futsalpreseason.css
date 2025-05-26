@@ -1,0 +1,191 @@
+.groups-section {
+  margin: 110px auto 50px;
+  max-width: 1300px;
+}
+
+.groupsh1 {
+  font-size: 40px;
+  color: #ececec;
+}
+.group-container {
+  margin: 40px 0;
+  padding: 15px;
+  background-color: #1e1e1e;
+  color: #898989;
+  border-radius: 5px;
+}
+.group-title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: #d719f4;
+  border-bottom: 1px solid #4a4a4a; /* Linia subțire sub titlu */
+  padding-bottom: 15px; /* Spațiu între text și linie */
+}
+
+.teams-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+  padding: 20px;
+  text-align: center;
+}
+.position-col {
+  width: 30px; /* Ajustează lățimea în funcție de preferințe */
+  text-align: center; /* Asigură alinierea centrală pentru aspect uniform */
+}
+
+.teams-table th {
+  color: #d719f4;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.teams-table td {
+  padding: 5px;
+  border-bottom: 1px solid #4a4a4a; /* Linia subțire sub titlu */
+  padding-bottom: 10px; /* Spațiu între text și linie */
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+tbody tr:nth-child(1) td:nth-child(1),
+tbody tr:nth-child(2) td:nth-child(1) {
+  background-color: rgb(46, 10, 90);
+}
+
+.teams-table td:nth-child(1) {
+  padding: 5px;
+  border-bottom: 1px solid #4a4a4a; /* Linia subțire sub titlu */
+  padding-bottom: 10px; /* Spațiu între text și linie */
+  padding-top: 10px;
+  font-size: 13px;
+}
+
+.teams-table th:nth-child(2) {
+  text-align: left;
+}
+.teams-table td:nth-child(2) {
+  padding: 5px;
+  border-bottom: 1px solid #4a4a4a; /* Linia subțire sub titlu */
+  padding-bottom: 10px; /* Spațiu între text și linie */
+  padding-top: 10px;
+  text-align: left;
+}
+
+.teams-list li {
+  margin-bottom: 5px;
+}
+.show-fixtures-btn {
+  background-color: #6a0dad;
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 17px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.fixtures {
+  display: none;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.fixtures p {
+  padding: 5px;
+}
+
+.show-fixtures-btn:focus {
+  outline: none;
+}
+
+.team-info {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.team-logo1 {
+  width: 25px; /* Ajustează dimensiunea logo-ului */
+  height: 25px;
+  margin-right: 5px; /* Spațiu între logo și numele echipei */
+  object-fit: contain; /* Asigură că imaginea își păstrează proporțiile */
+}
+.finalstages {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* Permite împachetarea elementelor pe linii noi */
+  justify-content: center; /* Centrează elementele în cazul în care se împachetează */
+  gap: 20px;
+}
+
+.matches-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  width: 100%; /* Ocupă întreaga lățime disponibilă */
+  /* Limitează lățimea maximă pentru a evita lățimi prea mari */
+  box-sizing: border-box; /* Include padding-ul în dimensiunea totală */
+}
+
+.match {
+  display: flex;
+  align-items: center;
+  background-color: #2b2b2b;
+  padding: 10px;
+  border-radius: 5px;
+  color: #d719f4;
+  flex-wrap: wrap;
+}
+
+.match-stage {
+  font-weight: bold;
+  padding-right: 10px;
+  border-right: 2px solid #d719f4;
+  margin-right: 10px;
+  padding: 7px;
+  flex-shrink: 0;
+}
+
+.team {
+  width: 100px;
+  flex: 1; /* Permite echipei să se extindă pentru a umple spațiul disponibil */
+  text-align: center;
+}
+
+.score {
+  width: 60px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #3a3a3a;
+  padding: 5px;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+
+.sf-container,
+.final-container {
+  align-self: center;
+  margin-top: 30px; /* Adaugă spațiu deasupra pentru a le separa */
+}
+
+@media (max-width: 768px) {
+  .groups-section {
+    margin: 100px 10px;
+  }
+
+  .groupsh1 {
+    font-size: 25px;
+  }
+  .teams-table td {
+    font-size: 15px;
+  }
+}

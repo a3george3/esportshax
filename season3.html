@@ -1,0 +1,4272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Sports HaxBall</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/season3.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/982b8fc2a9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.cdnfonts.com/css/premier-league"
+      rel="stylesheet"
+    />
+    <script src="login.js"></script>
+    <script src="season3.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href=""><img src="images/logo2.png" alt="" /></a>
+        </div>
+        <p id="bigfutsal">
+          <span><a href="index.html" class="bigspan">big</a></span> /
+          <span><a href="indexfutsal.html" class="futsalspan">futsal</a></span>
+        </p>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li>
+            <form id="searchForm" class="search-form">
+              <input
+                type="text"
+                id="playerSearch"
+                placeholder="Search a player!"
+                autocomplete="off"
+              />
+              <ul id="searchSuggestions" class="suggestions"></ul>
+            </form>
+          </li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="prosettings.html">PRO SETTINGS</a></li>
+          <li><a href="elo.html">ELO</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn"
+              >LEAGUE<img src="images/arrow.png" alt="" class="downarrow"
+            /></a>
+            <div class="dropdown-content">
+              <a href="season3.html">TABLE</a>
+              <a href="statistics.html">STATISTICS</a>
+            </div>
+          </li>
+          <li id="auth-link">
+            <a href="login.html" class="login-button">Log-in</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="seasontable">
+      <div class="titletable"><h2>TABLE</h2></div>
+      <table>
+        <thead>
+          <tr>
+            <th class="thpos"></th>
+            <th>CLUB</th>
+            <th>PTS</th>
+            <th>PL</th>
+            <th>W</th>
+            <th>D</th>
+            <th>L</th>
+            <th class="hide-on-small">GS</th>
+            <th class="hide-on-small">GA</th>
+            <th>GD</th>
+          </tr>
+        </thead>
+        <tbody id="seasonTableBody"></tbody>
+        <caption>
+          *the 11 th and 12 th places will be relegated if the next season will
+          have 2 divisions
+        </caption>
+      </table>
+    </div>
+
+    <div class="fixturestable">
+      <div class="fixture">
+        <h2>Matchday 1</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>DATE</th>
+              <th>MATCH</th>
+              <th>REC</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>05 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/nextplease.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">NXP!</span>
+                  </a>
+                  <span class="score">12-2</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">HCP</span>
+                    <img
+                      src="images/hcprowlers.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/2dbf23ef-ff35-400d-8c8a-3456cf5fcbe4"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>05 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/msby.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">MSBY</span>
+                  </a>
+                  <span class="score">7-2</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">MAR</span>
+                    <img
+                      src="images/maracaibo.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/132ebb8c-708a-4e77-ba56-2a8a3011022a"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>05 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/thescapers.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">SCA</span>
+                  </a>
+                  <span class="score">2-3</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">F&F</span>
+                    <img
+                      src="images/fnf.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/9d9031b0-cf91-4191-aa34-a197c8ddc3f7"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>05 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/nightmare.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">NIG</span>
+                  </a>
+                  <span class="score">1-0</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">GE</span>
+                    <img
+                      src="images/goldeneagles.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/eac98450-61d5-431c-81a1-ddbe5d3b9ec9"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>05 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/fear.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">FEAR</span>
+                  </a>
+                  <span class="score">0-2</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">BUX</span>
+                    <img
+                      src="images/buxton1.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/b156a3da-5b59-47e7-aa1d-e1186eba3ce5"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>05 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/777moneymakers.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">777M</span>
+                  </a>
+                  <span class="score">1-4</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">FL97</span>
+                    <img
+                      src="images/flaviu1997.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/50310a77-cacc-47c8-9991-1c183625d8cd"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="fixture">
+        <h2>Matchday 2</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Match</th>
+              <th>REC</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>08 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/hcprowlers.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">HCP</span>
+                  </a>
+                  <span class="score">7-2</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">F&F</span>
+                    <img
+                      src="images/fnf.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/6b7a30bb-ed50-4866-a6ad-e4ccc1754b22"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>08 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/nextplease.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">NXP!</span>
+                  </a>
+                  <span class="score">2-0</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">NIG</span>
+                    <img
+                      src="images/nightmare.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/3b78d965-18af-4c9e-9c44-9131a0f30937"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>08 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/maracaibo.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">MAR</span>
+                  </a>
+                  <span class="score">3-3</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">SCA</span>
+                    <img
+                      src="images/thescapers.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/362955bf-f6c8-477c-b132-0f2d1ecd1015"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>08 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/goldeneagles.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">GE</span>
+                  </a>
+                  <span class="score">2-6</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">FEAR</span>
+                    <img
+                      src="images/fear.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/5dc878d7-75b5-40ca-8262-93f792901c9b"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>08 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/flaviu1997.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">FL97</span>
+                  </a>
+                  <span class="score">3-16</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">MSBY</span>
+                    <img
+                      src="images/msby.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/6d829c8b-3c5b-46d7-816c-d0136069ce75"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>08 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/buxton1.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">BUX</span>
+                  </a>
+                  <span class="score">7-0</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">777M</span>
+                    <img
+                      src="images/777moneymakers.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/1f140a0f-22ab-4f3e-b918-8a4edde46cb2"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="fixture">
+        <h2>Matchday 3</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>DATE</th>
+              <th>MATCH</th>
+              <th>REC</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>12 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/nightmare.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">NIG</span>
+                  </a>
+                  <span class="score">7-0</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">HCP</span>
+                    <img
+                      src="images/hcprowlers.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/e718ba3f-d407-4a3b-895c-ee8a1a0aeb1b"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>12 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/fnf.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">F&F</span>
+                  </a>
+                  <span class="score">0-4</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">MAR</span>
+                    <img
+                      src="images/maracaibo.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/0ca4979d-8d90-4a34-a899-10cf070f4902"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>12 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/fear.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">FEAR</span>
+                  </a>
+                  <span class="score">0-1</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">NXP!</span>
+                    <img
+                      src="images/nextplease.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/0c11f93f-a729-4a18-b6e1-824337e9a1e0"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>12 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/thescapers.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">SCA</span>
+                  </a>
+                  <span class="score">3-0</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">FL97</span>
+                    <img
+                      src="images/flaviu1997.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a href="">LINK</a>
+              </td>
+            </tr>
+            <tr>
+              <td>12 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/777moneymakers.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">777M</span>
+                  </a>
+                  <span class="score">3-0</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">GE</span>
+                    <img
+                      src="images/goldeneagles.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/132ebb8c-708a-4e77-ba56-2a8a3011022a"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>12 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/msby.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">MSBY</span>
+                  </a>
+                  <span class="score">7-2</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">BUX</span>
+                    <img
+                      src="images/buxton1.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/dd4ced7f-7e73-4b0e-a134-7dd74471b043"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="fixture">
+        <h2>Matchday 4</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Match</th>
+              <th>REC</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>15 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/hcprowlers.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">HCP</span>
+                  </a>
+                  <span class="score">4-2</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">MAR</span>
+                    <img
+                      src="images/maracaibo.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/2e39733b-0680-4d6c-95cf-60a614b133d7"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>15 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/nightmare.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">NIG</span>
+                  </a>
+                  <span class="score">2-1</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">FEAR</span>
+                    <img
+                      src="images/fear.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/713d8550-f328-4572-bedb-ac75297b7ad2"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>15 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/flaviu1997.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">FL97</span>
+                  </a>
+                  <span class="score">0-4</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">F&F</span>
+                    <img
+                      src="images/fnf.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/104f060c-d6cf-4b9d-95f7-44fe1d0cd994"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>15 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/nextplease.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">NXP!</span>
+                  </a>
+                  <span class="score">15-2</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">777M</span>
+                    <img
+                      src="images/777moneymakers.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/36e78e92-6260-4bff-bccb-ba729710fbee"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>15 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/buxton1.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">BUX</span>
+                  </a>
+                  <span class="score">6-1</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">SCA</span>
+                    <img
+                      src="images/thescapers.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/82fc7d07-29d9-4379-9f62-f81c7270f837"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>15 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/goldeneagles.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">GE</span>
+                  </a>
+                  <span class="score">3-4</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">MSBY</span>
+                    <img
+                      src="images/msby.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/b3edc67f-8b67-4792-ba2c-0afb76ec1640"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="fixture">
+        <h2>Matchday 5</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Match</th>
+              <th>REC</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>19 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/hcprowlers.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">HCP</span>
+                  </a>
+                  <span class="score">2-4</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">FEAR</span>
+                    <img
+                      src="images/fear.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/4e71bc33-8d25-4bd1-a67c-43d682d65dde"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>19 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/maracaibo.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">MAR</span>
+                  </a>
+                  <span class="score">1-1</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">FL97</span>
+                    <img
+                      src="images/flaviu1997.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/e11b3ba7-25d4-4534-a54d-3a75bdfcbe74"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>19 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/777moneymakers.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">777M</span>
+                  </a>
+                  <span class="score">0-8</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">NIG</span>
+                    <img
+                      src="images/nightmare.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a href="">LINK</a>
+              </td>
+            </tr>
+            <tr>
+              <td>19 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/fnf.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">F&F</span>
+                  </a>
+                  <span class="score">0-5</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">BUX</span>
+                    <img
+                      src="images/buxton1.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/5163b6b2-918d-415f-8af3-c8b3f6bdcff2"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>19 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/msby.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">MSBY</span>
+                  </a>
+                  <span class="score">2-3</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">NXP!</span>
+                    <img
+                      src="images/nextplease.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/0ad44476-d407-4896-945c-aad477e1e8e6"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>19 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/thescapers.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">SCA</span>
+                  </a>
+                  <span class="score">3-7</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">GE</span>
+                    <img
+                      src="images/goldeneagles.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/7334a22b-669f-4b7c-9acd-2124112d2ebe"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="fixture">
+        <h2>Matchday 6</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Match</th>
+              <th>REC</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>22 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/hcprowlers.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">HCP</span>
+                  </a>
+                  <span class="score">3-0</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">FL97</span>
+                    <img
+                      src="images/flaviu1997.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a href="">LINK</a>
+              </td>
+            </tr>
+            <tr>
+              <td>22 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/fear.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">FEAR</span>
+                  </a>
+                  <span class="score">8-0</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">777M</span>
+                    <img
+                      src="images/777moneymakers.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/88b59383-286e-4f15-8282-689d9743ee69"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>22 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/buxton1.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">BUX</span>
+                  </a>
+                  <span class="score">2-2</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">MAR</span>
+                    <img
+                      src="images/maracaibo.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/ca504bcc-90da-4386-b8f5-03710c313041"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>22 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/nightmare.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">NIG</span>
+                  </a>
+                  <span class="score">1-3</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">MSBY</span>
+                    <img
+                      src="images/msby.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/975872a1-e255-4985-8a52-1d8a22a3849d"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>22 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/goldeneagles.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">GE</span>
+                  </a>
+                  <span class="score">4-0</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">F&F</span>
+                    <img
+                      src="images/fnf.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a href="">LINK</a>
+              </td>
+            </tr>
+            <tr>
+              <td>22 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/nextplease.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">NXP!</span>
+                  </a>
+                  <span class="score">14-2</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">SCA</span>
+                    <img
+                      src="images/thescapers.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a href="">LINK</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="fixture">
+        <h2>Matchday 7</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Match</th>
+              <th>REC</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>26 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/hcprowlers.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">HCP</span>
+                  </a>
+                  <span class="score">5-1</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">777M</span>
+                    <img
+                      src="images/777moneymakers.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/0c2b7978-49d8-4741-9bab-d8f56a3fd889"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>26 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/flaviu1997.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">FL97</span>
+                  </a>
+                  <span class="score">0-3</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">BUX</span>
+                    <img
+                      src="images/buxton1.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a href="">LINK</a>
+              </td>
+            </tr>
+            <tr>
+              <td>26 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/msby.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">MSBY</span>
+                  </a>
+                  <span class="score">7-2</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">FEAR</span>
+                    <img
+                      src="images/fear.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/ae6e3ae1-d615-4d0f-8ada-bf23c71b4217"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>26 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/maracaibo.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">MAR</span>
+                  </a>
+                  <span class="score">0-10</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">GE</span>
+                    <img
+                      src="images/goldeneagles.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/fc725e13-c9d5-447e-b8e9-0b3f91eefdec"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>26 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/thescapers.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">SCA</span>
+                  </a>
+                  <span class="score">0-2</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">NIG</span>
+                    <img
+                      src="images/nightmare.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/43e98701-6192-436a-aad5-ec5ee9c12984"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>26 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/nextplease.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">NXP!</span>
+                  </a>
+                  <span class="score">19-3</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">F&F</span>
+                    <img
+                      src="images/fnf.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/5f7281be-3763-4715-8c7a-b650101cb15b"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="fixture">
+        <h2>Matchday 8</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Match</th>
+              <th>REC</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>28 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/hcprowlers.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">HCP</span>
+                  </a>
+                  <span class="score">0-3</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">BUX</span>
+                    <img
+                      src="images/buxton1.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a href="">LINK</a>
+              </td>
+            </tr>
+            <tr>
+              <td>28 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/777moneymakers.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">777M</span>
+                  </a>
+                  <span class="score">1-12</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">MSBY</span>
+                    <img
+                      src="images/msby.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/7bc7a829-f719-4656-adf5-9bbeeda28ce7"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>28 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/goldeneagles.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">GE</span>
+                  </a>
+                  <span class="score">8-3</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">FL97</span>
+                    <img
+                      src="images/flaviu1997.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/72870999-25bf-480b-a231-7660db7e14c7"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>28 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/fear.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">FEAR</span>
+                  </a>
+                  <span class="score">13-2</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">SCA</span>
+                    <img
+                      src="images/thescapers.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/db75ed50-95c5-42ab-bd1b-783951f3adc1"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>28 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/nextplease.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">nXp!</span>
+                  </a>
+                  <span class="score">13-2</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">MAR</span>
+                    <img
+                      src="images/maracaibo.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/2b82b0b9-4c0a-45bd-8d26-27a6bf6ce757"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>28 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/nightmare.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">NIG</span>
+                  </a>
+                  <span class="score">11-0</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">F&F</span>
+                    <img
+                      src="images/fnf.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/40036f53-f4f9-4e92-a048-28f3480507fb"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="fixture">
+        <h2>Matchday 9</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Match</th>
+              <th>REC</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>03 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/hcprowlers.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">HCP</span>
+                  </a>
+                  <span class="score">0-3</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">MSBY</span>
+                    <img
+                      src="images/msby.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a href="">LINK</a>
+              </td>
+            </tr>
+            <tr>
+              <td>03 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/goldeneagles.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">GE</span>
+                  </a>
+                  <span class="score">0-3</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">BUX</span>
+                    <img
+                      src="images/buxton1.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a href="">LINK</a>
+              </td>
+            </tr>
+            <tr>
+              <td>03 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/thescapers.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">SCA</span>
+                  </a>
+                  <span class="score">6-1</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">777M</span>
+                    <img
+                      src="images/777moneymakers.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/eedd80b1-f1a7-4900-a9db-19463ea26780"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>03 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/flaviu1997.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">FL97</span>
+                  </a>
+                  <span class="score">0-3</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">NXP!</span>
+                    <img
+                      src="images/nextplease.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a href="">LINK</a>
+              </td>
+            </tr>
+            <tr>
+              <td>03 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/fnf.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">F&F</span>
+                  </a>
+                  <span class="score">0-3</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">FEAR</span>
+                    <img
+                      src="images/fear.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a href="">LINK</a>
+              </td>
+            </tr>
+            <tr>
+              <td>03 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/maracaibo.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">MAR</span>
+                  </a>
+                  <span class="score">0-14</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">NIG</span>
+                    <img
+                      src="images/nightmare.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/5c872b0c-fd2f-4557-a32c-a827e752cb8b"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="fixture">
+        <h2>Matchday 10</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Match</th>
+              <th>REC</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>06 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/hcprowlers.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">HCP</span>
+                  </a>
+                  <span class="score">3-0</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">GE</span>
+                    <img
+                      src="images/goldeneagles.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a href="">LINK</a>
+              </td>
+            </tr>
+            <tr>
+              <td>06 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/msby.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">MSBY</span>
+                  </a>
+                  <span class="score">14-2</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">SCA</span>
+                    <img
+                      src="images/thescapers.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a href="">LINK</a>
+              </td>
+            </tr>
+            <tr>
+              <td>06 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/nextplease.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">nXp!</span>
+                  </a>
+                  <span class="score">3-0</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">BUX</span>
+                    <img
+                      src="images/buxton1.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/a0f43574-b0e6-4bee-ba81-18559c9e29e4"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>06 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/777moneymakers.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">777M</span>
+                  </a>
+                  <span class="score">1-2</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">F&F</span>
+                    <img
+                      src="images/fnf.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/69ea877e-1641-4064-a7a8-97839419b478"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>06 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/nightmare.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">NIG</span>
+                  </a>
+                  <span class="score">3-0</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">FL97</span>
+                    <img
+                      src="images/flaviu1997.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a href="">LINK</a>
+              </td>
+            </tr>
+            <tr>
+              <td>06 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/fear.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">FEAR</span>
+                  </a>
+                  <span class="score">11-3</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">MAR</span>
+                    <img
+                      src="images/maracaibo.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/3976af21-7300-4967-9101-edab8cd7f253"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="fixture">
+        <h2>Matchday 11</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Match</th>
+              <th>REC</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>10 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/hcprowlers.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">HCP</span>
+                  </a>
+                  <span class="score">4-0</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">SCA</span>
+                    <img
+                      src="images/thescapers.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/b70d739c-585c-4870-aa1e-a4ee9c56b9dc"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>10 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/goldeneagles.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">GE</span>
+                  </a>
+                  <span class="score">0-3</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">nXp!</span>
+                    <img
+                      src="images/nextplease.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a href="">LINK</a>
+              </td>
+            </tr>
+            <tr>
+              <td>10 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/fnf.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">F&F</span>
+                  </a>
+                  <span class="score">0-3</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">MSBY</span>
+                    <img
+                      src="images/msby.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a href="">LINK</a>
+              </td>
+            </tr>
+            <tr>
+              <td>10 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/buxton1.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">BUX</span>
+                  </a>
+                  <span class="score">0-4</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">NIG</span>
+                    <img
+                      src="images/nightmare.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/02b9012b-092d-49ed-b716-f29cfeff7e5c"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>10 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/maracaibo.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">MAR</span>
+                  </a>
+                  <span class="score">1-4</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">777M</span>
+                    <img
+                      src="images/777moneymakers.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/9ef6a9c6-5782-407c-8a03-3a7bcd903775?t=1279"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>10 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/flaviu1997.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">FL97</span>
+                  </a>
+                  <span class="score">0-3</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">FEAR</span>
+                    <img
+                      src="images/fear.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a href="">LINK</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="fixture">
+        <h2>Matchday 12</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>DATE</th>
+              <th>MATCH</th>
+              <th>REC</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>17 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/nextplease.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">NXP!</span>
+                  </a>
+                  <span class="score">3-0</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">HCP</span>
+                    <img
+                      src="images/hcprowlers.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/2dbf23ef-ff35-400d-8c8a-3456cf5fcbe4"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>17 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/msby.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">MSBY</span>
+                  </a>
+                  <span class="score">7-1</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">MAR</span>
+                    <img
+                      src="images/maracaibo.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/2d522b1f-b967-4162-9330-765e43cbb31c"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>17 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/thescapers.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">SCA</span>
+                  </a>
+                  <span class="score">3-0</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">F&F</span>
+                    <img
+                      src="images/fnf.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/9d9031b0-cf91-4191-aa34-a197c8ddc3f7"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>17 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/nightmare.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">NIG</span>
+                  </a>
+                  <span class="score">3-0</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">GE</span>
+                    <img
+                      src="images/goldeneagles.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/eac98450-61d5-431c-81a1-ddbe5d3b9ec9"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>17 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/fear.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">FEAR</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">BUX</span>
+                    <img
+                      src="images/buxton1.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/b156a3da-5b59-47e7-aa1d-e1186eba3ce5"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>17 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/777moneymakers.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">777M</span>
+                  </a>
+                  <span class="score">1-2</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">FL97</span>
+                    <img
+                      src="images/flaviu1997.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/e6ca17b9-9834-4d08-93ea-77ff8f7410ca"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="fixture">
+        <h2>Matchday 13</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Match</th>
+              <th>REC</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>20 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/hcprowlers.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">HCP</span>
+                  </a>
+                  <span class="score">3-0</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">F&F</span>
+                    <img
+                      src="images/fnf.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/6b7a30bb-ed50-4866-a6ad-e4ccc1754b22"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>20 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/nextplease.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">NXP!</span>
+                  </a>
+                  <span class="score">9-1</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">NIG</span>
+                    <img
+                      src="images/nightmare.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/f55d308f-755b-44ad-ac16-4ff41419a64c"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>20 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/maracaibo.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">MAR</span>
+                  </a>
+                  <span class="score">1-1</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">SCA</span>
+                    <img
+                      src="images/thescapers.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/14c4b0b0-06b3-4a23-a02c-dd87a835117d"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>20 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/goldeneagles.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">GE</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">FEAR</span>
+                    <img
+                      src="images/fear.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/5dc878d7-75b5-40ca-8262-93f792901c9b"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>20 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/flaviu1997.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">FL97</span>
+                  </a>
+                  <span class="score">0-11</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">MSBY</span>
+                    <img
+                      src="images/msby.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/6d829c8b-3c5b-46d7-816c-d0136069ce75"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>20 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/buxton1.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">BUX</span>
+                  </a>
+                  <span class="score">6-3</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">777M</span>
+                    <img
+                      src="images/777moneymakers.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/1f140a0f-22ab-4f3e-b918-8a4edde46cb2"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="fixture">
+        <h2>Matchday 14</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>DATE</th>
+              <th>MATCH</th>
+              <th>REC</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>12 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/nightmare.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">NIG</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">HCP</span>
+                    <img
+                      src="images/hcprowlers.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/e718ba3f-d407-4a3b-895c-ee8a1a0aeb1b"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>12 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/fnf.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">F&F</span>
+                  </a>
+                  <span class="score">0-3</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">MAR</span>
+                    <img
+                      src="images/maracaibo.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/0ca4979d-8d90-4a34-a899-10cf070f4902"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>12 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/fear.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">FEAR</span>
+                  </a>
+                  <span class="score">0-1</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">NXP!</span>
+                    <img
+                      src="images/nextplease.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/012a6cf3-4958-41c3-95ed-109e75f46bc9"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>12 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/thescapers.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">SCA</span>
+                  </a>
+                  <span class="score">3-1</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">FL97</span>
+                    <img
+                      src="images/flaviu1997.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/6165dc49-1422-4072-a2c8-7d71e52ad0bd"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>12 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/777moneymakers.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">777M</span>
+                  </a>
+                  <span class="score">2-1</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">GE</span>
+                    <img
+                      src="images/goldeneagles.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/132ebb8c-708a-4e77-ba56-2a8a3011022a"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>12 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/msby.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">MSBY</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">BUX</span>
+                    <img
+                      src="images/buxton1.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/dd4ced7f-7e73-4b0e-a134-7dd74471b043"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="fixture">
+        <h2>Matchday 15</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Match</th>
+              <th>REC</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>31 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/hcprowlers.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">HCP</span>
+                  </a>
+                  <span class="score">0-3</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">MAR</span>
+                    <img
+                      src="images/maracaibo.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/2e39733b-0680-4d6c-95cf-60a614b133d7"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>31 OCT, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/nightmare.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">NIG</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">FEAR</span>
+                    <img
+                      src="images/fear.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/713d8550-f328-4572-bedb-ac75297b7ad2"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>31 OCT, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/flaviu1997.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">FL97</span>
+                  </a>
+                  <span class="score">3-0</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">F&F</span>
+                    <img
+                      src="images/fnf.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/104f060c-d6cf-4b9d-95f7-44fe1d0cd994"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>31 OCT, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/nextplease.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">NXP!</span>
+                  </a>
+                  <span class="score">10-1</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">777M</span>
+                    <img
+                      src="images/777moneymakers.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/6e6f9736-bb4a-4c76-a657-a31b4f47825d"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>31 OCT, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/buxton1.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">BUX</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">SCA</span>
+                    <img
+                      src="images/thescapers.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/82fc7d07-29d9-4379-9f62-f81c7270f837"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>31 OCT, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/goldeneagles.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">GE</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">MSBY</span>
+                    <img
+                      src="images/msby.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/b3edc67f-8b67-4792-ba2c-0afb76ec1640"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="fixture">
+        <h2>Matchday 16</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Match</th>
+              <th>REC</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>3 Nov, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/hcprowlers.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">HCP</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">FEAR</span>
+                    <img
+                      src="images/fear.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/4e71bc33-8d25-4bd1-a67c-43d682d65dde"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>3 Nov, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/maracaibo.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">MAR</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">FL97</span>
+                    <img
+                      src="images/flaviu1997.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/e11b3ba7-25d4-4534-a54d-3a75bdfcbe74"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>3 Nov, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/777moneymakers.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">777M</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">NIG</span>
+                    <img
+                      src="images/nightmare.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a href="">LINK</a>
+              </td>
+            </tr>
+            <tr>
+              <td>3 Nov, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/fnf.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">F&F</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">BUX</span>
+                    <img
+                      src="images/buxton1.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/5163b6b2-918d-415f-8af3-c8b3f6bdcff2"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>3 Nov, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/msby.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">MSBY</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">NXP!</span>
+                    <img
+                      src="images/nextplease.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/0ad44476-d407-4896-945c-aad477e1e8e6"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>3 Nov, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/thescapers.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">SCA</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">GE</span>
+                    <img
+                      src="images/goldeneagles.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/7334a22b-669f-4b7c-9acd-2124112d2ebe"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="fixture">
+        <h2>Matchday 17</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Match</th>
+              <th>REC</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>7 Nov, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/hcprowlers.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">HCP</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">FL97</span>
+                    <img
+                      src="images/flaviu1997.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a href="">LINK</a>
+              </td>
+            </tr>
+            <tr>
+              <td>7 Nov, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/fear.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">FEAR</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">777M</span>
+                    <img
+                      src="images/777moneymakers.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/88b59383-286e-4f15-8282-689d9743ee69"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>7 Nov, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/buxton1.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">BUX</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">MAR</span>
+                    <img
+                      src="images/maracaibo.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/ca504bcc-90da-4386-b8f5-03710c313041"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>7 Nov, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/nightmare.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">NIG</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">MSBY</span>
+                    <img
+                      src="images/msby.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/975872a1-e255-4985-8a52-1d8a22a3849d"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>7 Nov, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/goldeneagles.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">GE</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">F&F</span>
+                    <img
+                      src="images/fnf.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a href="">LINK</a>
+              </td>
+            </tr>
+            <tr>
+              <td>7 Nov, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/nextplease.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">NXP!</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">SCA</span>
+                    <img
+                      src="images/thescapers.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a href="">LINK</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="fixture">
+        <h2>Matchday 18</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Match</th>
+              <th>REC</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Nov, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/hcprowlers.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">HCP</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">777M</span>
+                    <img
+                      src="images/777moneymakers.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/0c2b7978-49d8-4741-9bab-d8f56a3fd889"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>Nov, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/flaviu1997.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">FL97</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">BUX</span>
+                    <img
+                      src="images/buxton1.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a href="">LINK</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Nov, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/msby.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">MSBY</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">FEAR</span>
+                    <img
+                      src="images/fear.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/ae6e3ae1-d615-4d0f-8ada-bf23c71b4217"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>Nov, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/maracaibo.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">MAR</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">GE</span>
+                    <img
+                      src="images/goldeneagles.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/fc725e13-c9d5-447e-b8e9-0b3f91eefdec"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>Nov, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/thescapers.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">SCA</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">NIG</span>
+                    <img
+                      src="images/nightmare.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/43e98701-6192-436a-aad5-ec5ee9c12984"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>Nov, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/nextplease.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">NXP!</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">F&F</span>
+                    <img
+                      src="images/fnf.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/5f7281be-3763-4715-8c7a-b650101cb15b"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- <div class="fixture">
+        <h2>Matchday 8</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Match</th>
+              <th>REC</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>28 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/hcprowlers.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">HCP</span>
+                  </a>
+                  <span class="score">0-3</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">BUX</span>
+                    <img
+                      src="images/buxton1.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a href="">LINK</a>
+              </td>
+            </tr>
+            <tr>
+              <td>28 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/777moneymakers.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">777M</span>
+                  </a>
+                  <span class="score">1-12</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">MSBY</span>
+                    <img
+                      src="images/msby.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/7bc7a829-f719-4656-adf5-9bbeeda28ce7"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>28 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/goldeneagles.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">GE</span>
+                  </a>
+                  <span class="score">8-3</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">FL97</span>
+                    <img
+                      src="images/flaviu1997.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/72870999-25bf-480b-a231-7660db7e14c7"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>28 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/fear.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">FEAR</span>
+                  </a>
+                  <span class="score">13-2</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">SCA</span>
+                    <img
+                      src="images/thescapers.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/db75ed50-95c5-42ab-bd1b-783951f3adc1"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>28 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/nextplease.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">nXp!</span>
+                  </a>
+                  <span class="score">13-2</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">MAR</span>
+                    <img
+                      src="images/maracaibo.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/2b82b0b9-4c0a-45bd-8d26-27a6bf6ce757"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>28 Sep, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/nightmare.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">NIG</span>
+                  </a>
+                  <span class="score">11-0</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">F&F</span>
+                    <img
+                      src="images/fnf.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/40036f53-f4f9-4e92-a048-28f3480507fb"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="fixture">
+        <h2>Matchday 9</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Match</th>
+              <th>REC</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>03 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/hcprowlers.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">HCP</span>
+                  </a>
+                  <span class="score">0-3</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">MSBY</span>
+                    <img
+                      src="images/msby.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a href="">LINK</a>
+              </td>
+            </tr>
+            <tr>
+              <td>03 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/goldeneagles.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">GE</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">BUX</span>
+                    <img
+                      src="images/buxton1.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a href="">LINK</a>
+              </td>
+            </tr>
+            <tr>
+              <td>03 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/thescapers.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">SCA</span>
+                  </a>
+                  <span class="score">6-1</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">777M</span>
+                    <img
+                      src="images/777moneymakers.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/eedd80b1-f1a7-4900-a9db-19463ea26780"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>03 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/flaviu1997.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">FL97</span>
+                  </a>
+                  <span class="score">0-3</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">NXP!</span>
+                    <img
+                      src="images/nextplease.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a href="">LINK</a>
+              </td>
+            </tr>
+            <tr>
+              <td>03 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/fnf.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">F&F</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">FEAR</span>
+                    <img
+                      src="images/fear.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a href="">LINK</a>
+              </td>
+            </tr>
+            <tr>
+              <td>03 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/maracaibo.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">MAR</span>
+                  </a>
+                  <span class="score">0-14</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">NIG</span>
+                    <img
+                      src="images/nightmare.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/5c872b0c-fd2f-4557-a32c-a827e752cb8b"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="fixture">
+        <h2>Matchday 10</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Match</th>
+              <th>REC</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>06 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/hcprowlers.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">HCP</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">GE</span>
+                    <img
+                      src="images/goldeneagles.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a href="">LINK</a>
+              </td>
+            </tr>
+            <tr>
+              <td>06 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/msby.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">MSBY</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">SCA</span>
+                    <img
+                      src="images/thescapers.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a href="">LINK</a>
+              </td>
+            </tr>
+            <tr>
+              <td>06 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/nextplease.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">nXp!</span>
+                  </a>
+                  <span class="score">3-0</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">BUX</span>
+                    <img
+                      src="images/buxton1.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/a0f43574-b0e6-4bee-ba81-18559c9e29e4"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>06 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/777moneymakers.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">777M</span>
+                  </a>
+                  <span class="score">1-2</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">F&F</span>
+                    <img
+                      src="images/fnf.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/69ea877e-1641-4064-a7a8-97839419b478"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>06 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/nightmare.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">NIG</span>
+                  </a>
+                  <span class="score">3-0</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">FL97</span>
+                    <img
+                      src="images/flaviu1997.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a href="">LINK</a>
+              </td>
+            </tr>
+            <tr>
+              <td>06 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/fear.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">FEAR</span>
+                  </a>
+                  <span class="score">11-3</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">MAR</span>
+                    <img
+                      src="images/maracaibo.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/3976af21-7300-4967-9101-edab8cd7f253"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="fixture">
+        <h2>Matchday 11</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Match</th>
+              <th>REC</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>10 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/hcprowlers.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">HCP</span>
+                  </a>
+                  <span class="score">4-0</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">SCA</span>
+                    <img
+                      src="images/thescapers.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/b70d739c-585c-4870-aa1e-a4ee9c56b9dc"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>10 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/goldeneagles.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">GE</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">nXp!</span>
+                    <img
+                      src="images/nextplease.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a href="">LINK</a>
+              </td>
+            </tr>
+            <tr>
+              <td>10 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/fnf.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">F&F</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">MSBY</span>
+                    <img
+                      src="images/msby.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a href="">LINK</a>
+              </td>
+            </tr>
+            <tr>
+              <td>10 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/buxton1.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">BUX</span>
+                  </a>
+                  <span class="score">0-4</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">NIG</span>
+                    <img
+                      src="images/nightmare.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/02b9012b-092d-49ed-b716-f29cfeff7e5c"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>10 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/maracaibo.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">MAR</span>
+                  </a>
+                  <span class="score">1-4</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">777M</span>
+                    <img
+                      src="images/777moneymakers.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/9ef6a9c6-5782-407c-8a03-3a7bcd903775?t=1279"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>10 Oct, 21:00</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="images/flaviu1997.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">FL97</span>
+                  </a>
+                  <span class="score">0-3</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">FEAR</span>
+                    <img
+                      src="images/fear.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a href="">LINK</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div> -->
+    </div>
+  </body>
+</html>

@@ -1,0 +1,203 @@
+/* Stilizare generală pentru corpul paginii */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.content {
+  margin-top: 100px;
+}
+
+/* Stilizare pentru titluri */
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+}
+
+h2 {
+  color: #555;
+  text-align: center; /* Aliniază titlurile h2 pe mijloc */
+  margin-top: 50px;
+}
+
+/* Stilizare pentru dropdown-ul sezonului */
+label {
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 18px;
+}
+
+.player-name {
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.player-name:hover {
+  color: orange;
+  transition: 0.2s;
+}
+
+select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  display: block;
+  margin: 15px auto; /* Aliniază dropdown-ul pe mijloc */
+}
+
+select:focus {
+  outline: none;
+  border-color: #ff9500;
+}
+
+/* Stilizare pentru tabele */
+table {
+  width: 90%;
+  margin: 10px auto 20px;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #ffaa00;
+  color: #fff;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Stilizare pentru coloană cu informații jucător */
+th:nth-child(2),
+td:nth-child(2) {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+td:nth-child(2) {
+  gap: 15px;
+}
+
+.player-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.player-info img {
+  display: block;
+  max-width: 40px; /* Dimensiune maximă a imaginii */
+  max-height: 40px; /* Dimensiune maximă a imaginii */
+  width: auto;
+  height: auto;
+  border-radius: 5px; /* Colțuri rotunjite pentru imagini */
+  object-fit: cover; /* Ajustează aspectul imaginii pentru a se potrivi în dimensiunile specificate */
+}
+
+/* Stilizare pentru imaginea flagului */
+.player-info .flag {
+  width: 25px; /* Dimensiune fixă pentru flag */
+  height: auto;
+  border-radius: 50%; /* Colțuri rotunjite pentru flag */
+}
+
+/* Stilizare pentru celulele cu imagini */
+td img {
+  display: block;
+  margin: auto;
+}
+
+.center-align {
+  text-align: center;
+}
+
+/* Asigură-te că doar celulele relevante sunt aliniate pe mijloc */
+th.center-align,
+td.center-align {
+  text-align: center;
+}
+
+/* Media Queries pentru dispozitive mobile */
+@media (max-width: 768px) {
+  /* Ajustează lățimea tabelelor pe ecrane mici și adaugă margini */
+  table {
+    width: calc(
+      100% - 20px
+    ); /* Reduce lățimea tabelului pentru a adăuga margini */
+    margin: 10px auto 20px;
+    padding: 0 10px; /* Adaugă padding în stânga și dreapta tabelului */
+  }
+
+  /* Ajustează dimensiunea fontului pentru dropdown */
+  select {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  /* Ajustează marginile și dimensiunea fontului pentru titluri */
+  h1 {
+    margin-top: 10px;
+  }
+
+  h2 {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  /* Stilizare pentru coloane de tabel pe ecrane mici */
+  th,
+  td {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  /* Ajustează dimensiunea imaginilor */
+  .player-info img {
+    max-width: 30px;
+    max-height: 30px;
+  }
+
+  .player-info .flag {
+    width: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Ajustează dimensiunea fontului pentru titluri pe ecrane foarte mici */
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+
+  /* Ajustează dimensiunea fontului și padding-ul pentru dropdown pe ecrane foarte mici */
+  select {
+    font-size: 12px;
+    padding: 6px;
+  }
+}

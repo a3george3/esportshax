@@ -1,0 +1,58 @@
+/* users.css */
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+ul#userList {
+  list-style: none;
+  padding: 0;
+  margin: 100px 10px;
+}
+
+ul#userList li {
+  display: flex; /* Flexbox pentru a alinia elementele pe o singură linie */
+  align-items: center; /* Centrăm vertical elementele */
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.profile-pic {
+  width: 50px; /* Lățimea imaginii de profil */
+  height: 50px; /* Înălțimea imaginii de profil */
+  border-radius: 50%; /* Transformăm în cerc */
+  margin-right: 15px; /* Spațiu între imagine și nume */
+}
+
+.team-logo {
+  width: 40px; /* Lățimea logo-ului echipei */
+  height: 40px; /* Înălțimea logo-ului echipei */
+  margin-left: auto; /* Așezăm logo-ul la dreapta */
+}
+
+ul#userList li:hover {
+  background-color: #e0e0e0;
+}
+
+@media (max-width: 600px) {
+  ul#userList li {
+    padding: 15px;
+    font-size: 16px;
+  }
+}

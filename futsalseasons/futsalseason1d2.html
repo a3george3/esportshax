@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Sports HaxBall</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="/css/indexfutsal.css" />
+    <link rel="stylesheet" href="/css/futsalseason1.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/982b8fc2a9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.cdnfonts.com/css/premier-league"
+      rel="stylesheet"
+    />
+    <script src="/login.js"></script>
+    <script src="/futsalseasons/futsalseason1d2.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href=""><img src="/images/logofutsal.png" alt="" /></a>
+        </div>
+        <p id="bigfutsal">
+          <span><a href="/index.html" class="bigspan">big</a></span> /
+          <span><a href="/indexfutsal.html" class="futsalspan">futsal</a></span>
+        </p>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li>
+            <form id="searchForm" class="search-form">
+              <input
+                type="text"
+                id="playerSearch"
+                placeholder="Search a player!"
+                autocomplete="off"
+              />
+              <ul id="searchSuggestions" class="suggestions"></ul>
+            </form>
+          </li>
+          <li><a href="/indexfutsal.html">Home</a></li>
+          <li><a href="/prosettings.html">PRO SETTINGS</a></li>
+          <li><a href="/elo.html">ELO</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn"
+              >LEAGUE<img src="/images/arrow.png" alt="" class="downarrow"
+            /></a>
+            <div class="dropdown-content">
+              <a href="futsalseason1.html">TABLE</a>
+              <a href="/futsalstatistics.html">STATISTICS</a>
+              <a href="/preseason/futsalpreseason.html">Preseason CUP</a>
+            </div>
+          </li>
+          <li id="auth-link">
+            <a href="login.html" class="login-button">Log-in</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="seasontable">
+      <div class="titletable"><h2>Division 2</h2></div>
+      <table>
+        <thead>
+          <tr>
+            <th class="thpos"></th>
+            <th></th>
+            <th>PTS</th>
+            <th>PL</th>
+            <th>W</th>
+            <th>D</th>
+            <th>L</th>
+            <th class="hide-on-small">GS</th>
+            <th class="hide-on-small">GA</th>
+            <th>GD</th>
+          </tr>
+        </thead>
+        <tbody id="seasonTableBody"></tbody>
+        <caption>
+          *the 7 th and 8 th places will be relegated if the next season will
+          have 2 divisions
+        </caption>
+      </table>
+    </div>
+    <div class="fixturestable">
+      <div class="fixture">
+        <h2>Matchday 1</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>DATE</th>
+              <th>MATCH</th>
+              <th>REC</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>27 Oct, 21:30</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="/images/pessoux.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">FCP</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">H2k</span>
+                    <img
+                      src="/images/h2k.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/2dbf23ef-ff35-400d-8c8a-3456cf5fcbe4"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>27 Oct, 21:30</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="/images/btw.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">BTW</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">ENF</span>
+                    <img
+                      src="/images/enforcers.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/132ebb8c-708a-4e77-ba56-2a8a3011022a"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+
+            <tr>
+              <td>27 Oct, 21:30</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="/images/bober.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">KB</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">VAR</span>
+                    <img
+                      src="/images/varazdin.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/b156a3da-5b59-47e7-aa1d-e1186eba3ce5"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>27 Oct, 21:30</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="/images/karmine.webp"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">KAR</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">TH</span>
+                    <img
+                      src="/images/thunderhax.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/50310a77-cacc-47c8-9991-1c183625d8cd"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="fixture">
+        <h2>Matchday 2</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>DATE</th>
+              <th>MATCH</th>
+              <th>REC</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>31 Oct, 21:30</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="/images/pessoux.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">FCP</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">BTW</span>
+                    <img
+                      src="/images/btw.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/2dbf23ef-ff35-400d-8c8a-3456cf5fcbe4"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>31 Oct, 21:30</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="/images/bober.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">KB</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">ENF</span>
+                    <img
+                      src="/images/enforcers.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/132ebb8c-708a-4e77-ba56-2a8a3011022a"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+
+            <tr>
+              <td>31 Oct, 21:30</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="/images/h2k.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">h2k</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">kar</span>
+                    <img
+                      src="/images/karmine.webp"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/b156a3da-5b59-47e7-aa1d-e1186eba3ce5"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>31 Oct, 21:30</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="/images/varazdin.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">VAR</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">TH</span>
+                    <img
+                      src="/images/thunderhax.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/50310a77-cacc-47c8-9991-1c183625d8cd"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="fixture">
+        <h2>Matchday 3</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>DATE</th>
+              <th>MATCH</th>
+              <th>REC</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>3 Nov, 21:30</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="/images/pessoux.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">FCP</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">ENF</span>
+                    <img
+                      src="/images/enforcers.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/2dbf23ef-ff35-400d-8c8a-3456cf5fcbe4"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>3 Nov, 21:30</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="/images/bober.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">KB</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">TH</span>
+                    <img
+                      src="/images/thunderhax.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/132ebb8c-708a-4e77-ba56-2a8a3011022a"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+
+            <tr>
+              <td>3 Nov, 21:30</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="/images/btw.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">BTW</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">H2k</span>
+                    <img
+                      src="/images/h2k.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/b156a3da-5b59-47e7-aa1d-e1186eba3ce5"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>3 Nov, 21:30</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="/images/karmine.webp"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">KAR</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">VAR</span>
+                    <img
+                      src="/images/varazdin.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/50310a77-cacc-47c8-9991-1c183625d8cd"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="fixture">
+        <h2>Matchday 4</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>DATE</th>
+              <th>MATCH</th>
+              <th>REC</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>7 Nov, 21:30</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="/images/pessoux.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">FCP</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">KB</span>
+                    <img
+                      src="/images/bober.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/2dbf23ef-ff35-400d-8c8a-3456cf5fcbe4"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>7 Nov, 21:30</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="/images/enforcers.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">ENF</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">KAR</span>
+                    <img
+                      src="/images/karmine.webp"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/132ebb8c-708a-4e77-ba56-2a8a3011022a"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+
+            <tr>
+              <td>7 Nov, 21:30</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="/images/btw.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">BTW</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">TH</span>
+                    <img
+                      src="/images/thunderhax.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/b156a3da-5b59-47e7-aa1d-e1186eba3ce5"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>7 Nov, 21:30</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="/images/h2k.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">H2k</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">VAR</span>
+                    <img
+                      src="/images/varazdin.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/50310a77-cacc-47c8-9991-1c183625d8cd"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="fixture">
+        <h2>Matchday 5</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>DATE</th>
+              <th>MATCH</th>
+              <th>REC</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>10 Nov, 21:30</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="/images/pessoux.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">FCP</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">kar</span>
+                    <img
+                      src="/images/karmine.webp"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/2dbf23ef-ff35-400d-8c8a-3456cf5fcbe4"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>10 Nov, 21:30</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="/images/bober.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">KB</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">BTW</span>
+                    <img
+                      src="/images/btw.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/132ebb8c-708a-4e77-ba56-2a8a3011022a"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+
+            <tr>
+              <td>10 Nov, 21:30</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="/images/enforcers.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">ENF</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">VAR</span>
+                    <img
+                      src="/images/varazdin.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/b156a3da-5b59-47e7-aa1d-e1186eba3ce5"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>10 Nov, 21:30</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="/images/h2k.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">h2k</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">TH</span>
+                    <img
+                      src="/images/thunderhax.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/50310a77-cacc-47c8-9991-1c183625d8cd"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="fixture">
+        <h2>Matchday 6</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>DATE</th>
+              <th>MATCH</th>
+              <th>REC</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>14 Nov, 21:30</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="/images/pessoux.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">FCP</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">TH</span>
+                    <img
+                      src="/images/thunderhax.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/2dbf23ef-ff35-400d-8c8a-3456cf5fcbe4"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>14 Nov, 21:30</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="/images/karmine.webp"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">KAR</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">BTW</span>
+                    <img
+                      src="/images/btw.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/132ebb8c-708a-4e77-ba56-2a8a3011022a"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+
+            <tr>
+              <td>14 Nov, 21:30</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="/images/bober.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">KB</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">H2k</span>
+                    <img
+                      src="/images/h2k.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/b156a3da-5b59-47e7-aa1d-e1186eba3ce5"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>14 Nov, 21:30</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="/images/enforcers.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">ENF</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">VAR</span>
+                    <img
+                      src="/images/varazdin.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/50310a77-cacc-47c8-9991-1c183625d8cd"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="fixture">
+        <h2>Matchday 7</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>DATE</th>
+              <th>MATCH</th>
+              <th>REC</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>17 Nov, 21:30</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="/images/pessoux.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">FCP</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">var</span>
+                    <img
+                      src="/images/varazdin.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/2dbf23ef-ff35-400d-8c8a-3456cf5fcbe4"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>17 Nov, 21:30</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="/images/h2k.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">h2k</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">TH</span>
+                    <img
+                      src="/images/thunderhax.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/132ebb8c-708a-4e77-ba56-2a8a3011022a"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+
+            <tr>
+              <td>17 Nov, 21:30</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="/images/karmine.webp"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">KAR</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">ENF</span>
+                    <img
+                      src="/images/enforcers.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/b156a3da-5b59-47e7-aa1d-e1186eba3ce5"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>17 Nov, 21:30</td>
+              <td>
+                <div class="team">
+                  <a href="team1.html" class="team-link">
+                    <img
+                      src="/images/btw.png"
+                      alt="Team 1 Logo"
+                      class="team-logo"
+                    />
+                    <span class="team-name">BTW</span>
+                  </a>
+                  <span class="score">-</span>
+                  <a href="team2.html" class="team-link">
+                    <span class="team-name">KB</span>
+                    <img
+                      src="/images/bober.png"
+                      alt="Team 2 Logo"
+                      class="team-logo"
+                    />
+                  </a>
+                </div>
+              </td>
+              <td>
+                <a
+                  href="https://replay.thehax.pl/50310a77-cacc-47c8-9991-1c183625d8cd"
+                  >LINK</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

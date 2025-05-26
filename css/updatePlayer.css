@@ -1,0 +1,86 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+.container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  position: relative; /* To position suggestions relative to this container */
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  text-align: left;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensures padding is included in total width */
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* Makes the button full width */
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#message {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #f00;
+}
+
+.suggestions {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background: white;
+  border: 1px solid #ccc;
+  position: absolute; /* Keeps suggestions positioned relative to container */
+  z-index: 1000;
+  width: calc(100% - 20px); /* Adjusts width to fit within container */
+  max-height: 200px; /* Limits the height of suggestions */
+  overflow-y: auto; /* Enables scrolling if suggestions exceed max-height */
+  border-radius: 5px; /* Rounding corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
+}
+
+.suggestions li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s; /* Smooth transition for hover effect */
+}
+
+.suggestions li:hover {
+  background-color: #f0f0f0; /* Change background on hover */
+}

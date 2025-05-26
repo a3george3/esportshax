@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Sports HaxBall</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/982b8fc2a9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.cdnfonts.com/css/premier-league"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="login.js"></script>
+    <script src="profile.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href=""><img src="images/logo2.png" alt="" /></a>
+        </div>
+        <p id="bigfutsal">
+          <span><a href="index.html" class="bigspan">big</a></span> /
+          <span><a href="indexfutsal.html" class="futsalspan">futsal</a></span>
+        </p>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li>
+            <form id="searchForm" class="search-form">
+              <input
+                type="text"
+                id="playerSearch"
+                placeholder="Search a player!"
+                autocomplete="off"
+              />
+              <ul id="searchSuggestions" class="suggestions"></ul>
+            </form>
+          </li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="prosettings.html">PRO SETTINGS</a></li>
+          <li><a href="elo.html">ELO</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn"
+              >LEAGUE<img src="images/arrow.png" alt="" class="downarrow"
+            /></a>
+            <div class="dropdown-content">
+              <a href="table.html">TABLE</a>
+              <a href="statistics.html">STATISTICS</a>
+            </div>
+          </li>
+          <li id="auth-link">
+            <a href="login.html" class="login-button">Log-in</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="maindiv">
+      <div class="profile-container">
+        <div class="left-panel">
+          <div class="usernamediv">
+            <img id="userFlag" src="" alt="Flag" class="flag-icon" />
+            <p id="userName"></p>
+          </div>
+          <div class="profile-buttons">
+            <button id="bigProfileButton">Big Profile</button>
+            <button id="futsalProfileButton">Futsal Profile</button>
+          </div>
+          <div class="profileStats">
+            <img
+              id="userProfilePic"
+              alt="Profil utilizator"
+              class="profile-pic"
+            />
+            <div class="alltime-stats">
+              <h2>All-time Statistics</h2>
+              <div id="teamWrapper">
+                <p id="teamLabel">Country:</p>
+                <div id="teamInfo">
+                  <img id="countryFlag" src="" alt="Country Flag" />
+                  <span id="countryName"></span>
+                </div>
+              </div>
+              <p class="games">Matches: <span id="totalGames">0</span></p>
+              <p>Goals: <span id="totalGoals">0</span></p>
+              <p class="assists">Assists: <span id="totalAssists">0</span></p>
+              <p>CleanSheets: <span id="totalCS">0</span></p>
+            </div>
+          </div>
+          <div class="currentstats">
+            <h2>Current Statistics</h2>
+            <div id="teamWrapper">
+              <p id="teamLabel">TEAM:</p>
+              <div id="teamInfo">
+                <img id="teamLogo" alt="Team Logo" class="team-logo" />
+                <a id="teamLink" href="#" class="team-name-link"
+                  ><span id="teamName"></span
+                ></a>
+              </div>
+            </div>
+            <p class="games">Matches: <span id="userGames">0</span></p>
+            <p class="goals">Goals: <span id="userGoals">0</span></p>
+            <p class="assists">Assists: <span id="userAssists">0</span></p>
+            <p class="goals">Clean Sheets: <span id="userCS">0</span></p>
+            <p class="games" id="seasonName">
+              Season: <span id="currentSeason"></span>
+            </p>
+          </div>
+          <div class="trophies">
+            <h2>Trophies</h2>
+            <ul id="trophiesList"></ul>
+          </div>
+        </div>
+        <div class="right-panel">
+          <div class="career-history">
+            <h2>Career History</h2>
+            <table id="careerHistoryTable">
+              <thead>
+                <tr>
+                  <th>Team</th>
+                  <th class="hide-on-small">Season</th>
+                  <th>Games</th>
+                  <th>Goals</th>
+                  <th>Assists</th>
+                  <th>CS</th>
+                </tr>
+              </thead>
+              <tbody id="careerHistoryList"></tbody>
+            </table>
+          </div>
+          <div class="chart-container">
+            <canvas id="playerStatsChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="users.html">Back to user list</a>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>About Us</h3>
+          <p>
+            We are one of the biggest
+            <span style="color: orange">Haxball</span> communities.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul class="quick-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">ELO</a></li>
+            <li><a href="/users.html">USERS</a></li>
+            <li><a href="/teams.html">TEAMS</a></li>
+          </ul>
+        </div>
+        <div class="registeredusers">
+          <p class="registered"></p>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p><span style="color: orange">DISCORD:</span> Hakut#1757</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 E-SPORTS HAXBALL. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

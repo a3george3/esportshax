@@ -1,0 +1,412 @@
+/* Aspectul general */
+body {
+  /* background-color: #e0e0e0; */
+  background-image: url("/images/bigbg2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Containerul principal pentru profil */
+.maindiv {
+  margin: 0 80px;
+}
+
+.profile-container {
+  margin: 110px auto 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  background-color: rgb(244, 244, 244);
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 1500px;
+  box-shadow: 0 10px 1px rgba(0, 0, 0, 0.2), 0 -10px 1px rgba(0, 0, 0, 0.2),
+    10px 0 1px rgba(0, 0, 0, 0.2), -10px 0 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Secțiunea din stânga */
+.left-panel,
+.right-panel {
+  flex: 1;
+}
+
+.profileStats {
+  display: flex;
+  margin: 15px 0;
+}
+
+.profileStats img {
+  width: 170px; /* Lățime fixă pentru imaginea de profil */
+  height: 170px; /* Înălțime fixă pentru imaginea de profil */
+  margin: auto;
+  border-radius: 50%;
+  border: 2px solid #f28911;
+}
+
+/* Stiluri pentru secțiunea de statistici */
+.alltime-stats {
+  margin-left: 10px;
+  padding: 20px;
+  width: 100%;
+}
+
+.currentstats {
+  margin: 20px;
+}
+
+.alltime-stats h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+  text-align: center;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 10px;
+}
+
+.currentstats h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+  text-align: center;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 10px;
+}
+
+.alltime-stats p {
+  font-size: 18px;
+  /* margin: 10px 0; */
+  color: #555;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+#teamName {
+  color: #555;
+  font-size: 18px;
+}
+
+#teamName:hover {
+  color: #f28911;
+}
+
+#countryName {
+  color: #555;
+  font-size: 17px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#countryFlag {
+  width: 21px;
+  height: 21px;
+  border-radius: 0%;
+  border: none;
+}
+
+#teamWrapper {
+  display: flex;
+  justify-content: space-between; /* Plasează TEAM: în stânga și restul în dreapta */
+  align-items: center;
+}
+
+#teamInfo {
+  display: flex;
+  align-items: center; /* Centrează vertical logo-ul și numele echipei */
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #f28911;
+}
+
+#teamLogo {
+  margin-right: 5px; /* Spațiu între logo și numele echipei */
+}
+
+.currentstats p {
+  font-size: 16px;
+  /* margin: 10px 0; */
+  color: #555;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.games,
+.assists {
+  background-color: #fedda9;
+}
+
+/* Stiluri pentru numele utilizatorului */
+.usernamediv {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 10px 0;
+  border-bottom: 1px solid #f99c07;
+  padding-bottom: 5px;
+  margin: 0;
+}
+
+.usernamediv img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+#userName {
+  font-size: 25px;
+  color: #343434;
+}
+
+/* Lista de trofee */
+
+.trophies {
+  margin-top: 30px;
+}
+
+#trophiesList {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+#trophiesList {
+  margin-top: 20px;
+  justify-content: center;
+}
+
+#trophiesList li {
+  margin: 5px;
+  display: flex;
+}
+
+.trophies h2 {
+  border-bottom: 1px solid #f99c07;
+  padding: 10px 0;
+  padding-bottom: 5px;
+  margin: 0;
+  color: #f99c07;
+  font-size: 23px;
+}
+
+.trophy-image {
+  width: 140px;
+  height: 140px;
+  max-width: 100%;
+}
+
+.right-panel {
+  flex: 1.5;
+}
+
+.team-logo {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-right: 0px;
+}
+
+.career-history {
+  margin-top: 20px;
+  overflow-x: auto; /* Enables horizontal scrolling if necessary */
+}
+
+.career-history h2 {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+#careerHistoryTable {
+  width: 100%; /* Full width */
+  border-collapse: collapse; /* Merge borders */
+  margin-top: 0px; /* Space above the table */
+  table-layout: auto; /* Allows flexible column widths */
+}
+
+#careerHistoryTable tr:nth-child(even) {
+  background-color: #edecec; /* Culoare pentru liniile impare */
+}
+
+#careerHistoryTable th,
+#careerHistoryTable td {
+  padding: 10px; /* Padding for cells */
+  text-align: center; /* Left-align text */
+  border-bottom: 1px solid #ddd; /* Bottom border for cells */
+}
+
+#careerHistoryTable th {
+  background-color: #f99c07; /* Header background color */
+  color: white; /* Header text color */
+}
+
+#careerHistoryTable td img.team-logo {
+  width: 30px; /* Width for team logo */
+  height: 30px; /* Height for team logo */
+  margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  #careerHistoryTable {
+    font-size: 15px; /* Smaller font size for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  #careerHistoryTable {
+    font-size: 14px; /* Even smaller font size for mobile */
+  }
+
+  #careerHistoryTable td img.team-logo {
+    width: 25px; /* Smaller logo size */
+    height: 25px; /* Smaller logo size */
+  }
+
+  #careerHistoryList td {
+    padding: 10px 5px; /* Less padding for smaller screens */
+  }
+
+  .maindiv {
+    margin: 0;
+  }
+
+  #careerHistoryTable th {
+    padding: 5px;
+  }
+}
+/* Responsivitate pentru ecrane mici */
+@media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column;
+    margin: 100px 0px 20px;
+    gap: 20px;
+    padding: 30px 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2), 0 -10px 10px rgba(0, 0, 0, 0.2),
+      10px 0 10px rgba(0, 0, 0, 0.2), -10px 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .alltime-stats {
+    margin-left: 0px;
+  }
+
+  #teamName {
+    font-size: 17px;
+  }
+
+  .career-history h2 {
+    font-size: 20px;
+  }
+
+  .hide-on-small {
+    display: none; /* Hide GS and GA columns */
+  }
+
+  .trophy-image {
+    width: 110px;
+    height: 110px;
+  }
+
+  .profileStats {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profileStats img {
+    width: 100%;
+    max-width: 200px; /* Limitează lățimea imaginii */
+    height: auto;
+  }
+
+  .alltime-stats {
+    /* margin-left: 0;
+    padding: 20px 0; */
+    width: 100%;
+  }
+
+  .alltime-stats h2 {
+    font-size: 22px;
+    padding-bottom: 8px;
+  }
+
+  #trophiesList {
+    justify-content: center;
+  }
+
+  .alltime-stats p {
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  .usernamediv {
+    padding: 10px 0;
+    border-bottom: 1px solid #f99c07;
+    padding-bottom: 5px;
+    margin-bottom: 20px; /* Adaugă spațiu sub nume */
+  }
+
+  #userName {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+.profile-buttons {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.profile-buttons {
+  display: flex; /* Folosește flexbox pentru alinierea butoanelor */
+  justify-content: center; /* Centrarea butoanelor pe orizontală */
+  flex-wrap: wrap; /* Permite butoanelor să se împacheteze pe mai multe rânduri */
+}
+
+#futsalProfileButton {
+  background-color: #4909e0;
+}
+
+#bigProfileButton {
+  background-color: #fb8b0a;
+}
+
+.profile-buttons button {
+  padding: 15px 30px; /* Mărirea padding-ului */
+  margin: 10px; /* Marginea între butoane */
+  font-size: 1.2em; /* Mărimea textului în unități relative */
+  font-family: "Premier League", sans-serif;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px; /* culoare albastră */
+  color: white;
+  transition: background-color 0.3s, transform 0.2s; /* Adăugarea unei tranziții pentru transformare */
+}
+
+/* Stiluri pentru hover */
+.profile-buttons button:hover {
+  background-color: #320db5; /* nuanță mai închisă la hover */
+  transform: scale(1.05); /* Mărirea butonului ușor la hover */
+}
+
+/* Media Queries pentru responsive design */
+@media (max-width: 768px) {
+  .profile-buttons button {
+    font-size: 1em; /* Ajustează mărimea fontului pe ecrane mici */
+    padding: 12px 24px; /* Ajustează padding-ul pe ecrane mici */
+  }
+}
+
+.chart-container {
+  margin-top: 80px;
+}

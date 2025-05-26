@@ -1,0 +1,401 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Premier League", sans-serif;
+}
+
+/* Containerul principal al tabelului */
+.seasontable {
+  padding: 0 30px;
+  overflow: hidden;
+  margin: 100px auto 0;
+  max-width: 1600px;
+}
+
+.titletable h2 {
+  text-align: left;
+  padding: 15px 0px;
+  color: rgb(216, 216, 216);
+  margin: 0;
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.titletable h2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #ddd; /* Culoarea liniei de design */
+  margin-top: 15px; /* Spațiu între text și linie */
+}
+.seasontable table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  border: none;
+}
+
+.seasontable th,
+.seasontable td {
+  padding: 12px;
+  text-align: center;
+  font-size: 18px;
+  border: none;
+}
+
+.seasontable th {
+  background-color: #161616;
+  color: white;
+  text-transform: uppercase;
+}
+
+.seasontable tr {
+  background-color: #211f21;
+  color: #b9b9b9;
+  border-bottom: 1px solid #141414;
+}
+
+.seasontable tr:nth-child(1) {
+  background-color: #15112a; /* Exemplu de culoare pentru tr-ul 12 */
+}
+.seasontable tr:nth-child(1):hover td {
+  background-color: #1a1533; /* Exemplu de culoare pentru tr-ul 12 */
+}
+.seasontable tr:nth-child(7) {
+  background-color: #2d0c0c; /* Exemplu de culoare pentru tr-ul 12 */
+}
+.seasontable tr:nth-child(7):hover td {
+  background-color: #3b1010; /* Exemplu de culoare pentru tr-ul 12 */
+}
+.seasontable tr:nth-child(8) {
+  background-color: #2d0c0c; /* Exemplu de culoare pentru tr-ul 12 */
+}
+.seasontable tr:nth-child(8):hover td {
+  background-color: #3b1010; /* Exemplu de culoare pentru tr-ul 12 */
+}
+
+table caption {
+  caption-side: bottom; /* Muta caption-ul sub tabel */
+  text-align: left; /* Aliniere centrală a textului */
+  padding-top: 10px; /* Spațiere față de tabel */
+  font-size: 12px; /* Dimensiune font */
+  color: #666; /* Culoare text */
+}
+
+.seasontable tr:hover td {
+  background-color: #242424;
+}
+
+.seasontable .club {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.seasontable .club img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.seasontable .club span {
+  color: #b9b9b9;
+  text-align: left;
+}
+.seasontable .club span:hover {
+  color: rgb(208, 0, 255);
+  transition: 0.2s;
+}
+
+.seasontable th:nth-child(2) {
+  text-align: left;
+}
+
+.seasontable td:nth-child(3) {
+  color: rgb(185, 48, 219);
+  font-weight: bold;
+}
+
+/* Responsivitate - adaptare la diferite dimensiuni de ecran */
+@media (max-width: 768px) {
+  .seasontable {
+    padding: 0px;
+  }
+  .seasontable th,
+  .seasontable td {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .seasontable .club img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .titletable h2 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .seasontable {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  table caption {
+    font-size: 8px;
+  }
+
+  .seasontable th,
+  .seasontable td {
+    padding: 7px;
+  }
+
+  .seasontable .club img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .titletable h2 {
+    font-size: 22px;
+  }
+}
+
+/* Containerul principal al tabelului de meciuri */
+.fixturestable {
+  padding: 20px;
+  max-width: 1600px;
+  margin: 20px auto 0;
+  color: rgb(238, 238, 238);
+}
+
+.fixture h2 {
+  text-align: left;
+  padding: 15px 0px;
+  color: rgb(106, 0, 255);
+  margin: 0;
+  font-size: 25px;
+  font-weight: 100;
+}
+
+.fixture h2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #ddd; /* Culoarea liniei de design */
+  margin-top: 5px;
+}
+
+/* Stilizarea fiecărui tabel de meciuri */
+.fixturestable .fixture {
+  margin-bottom: 20px; /* Spațiu între tabele */
+}
+
+/* Stilizarea fiecărui tabel de meciuri */
+.fixturestable table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Stilizarea antetului tabelului */
+.fixturestable th {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Stilizarea celulelor tabelului */
+.fixturestable td {
+  padding: 10px;
+  font-size: 14px;
+  border-bottom: 1px solid #373737;
+  text-align: center;
+}
+
+/* Stilizarea antetelor coloanelor */
+.fixturestable thead th:nth-child(1) {
+  width: 20%; /* Lățime mai mică pentru DATA */
+}
+
+.fixturestable thead th:nth-child(2) {
+  width: 60%; /* Lățime mai mare pentru MATCH */
+}
+
+.fixturestable thead th:nth-child(3) {
+  width: 20%; /* Lățime medie pentru LINK */
+}
+
+/* Stilizarea rândurilor */
+.fixturestable tr:nth-child(even) {
+  background-color: #202020;
+}
+
+.fixturestable tr:hover {
+  background-color: #2a2a2a;
+}
+
+/* Stilizarea echipei */
+.fixturestable .team {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.fixturestable .team img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Stilizarea linkurilor */
+.fixturestable a {
+  color: #001eff; /* Culoare portocalie */
+  text-decoration: none;
+}
+
+.fixturestable a:hover {
+  text-decoration: underline;
+}
+
+/* Stilizarea containerului echipei */
+.fixturestable .team {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Stilizarea linkurilor echipei */
+.fixturestable .team-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit; /* Moștenește culoarea textului de la părinte */
+}
+
+/* Stilizarea logo-urilor echipei */
+.fixturestable .team-logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+/* Stilizarea numelui echipei */
+.fixturestable .team-name {
+  font-size: 18px;
+}
+
+/* Stilizarea separatorului */
+.fixturestable .score {
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+/* Stilizarea pătratului pentru scor */
+.fixturestable .score {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #9757fe; /* Portocaliu */
+  color: #242424; /* Gri foarte închis */
+  font-size: 16px;
+  border-radius: 4px;
+  margin: 0 10px; /* Spațiu între echipe și scor */
+}
+
+/* Stilizarea linkurilor de echipe */
+.fixturestable .team-link:hover {
+  opacity: 0.8; /* Efect de hover pentru linkuri */
+}
+
+.thpos {
+  width: 10px;
+}
+/* Responsivitate */
+@media (max-width: 768px) {
+  .fixturestable th,
+  .fixturestable td {
+    padding: 7px;
+    font-size: 12px;
+  }
+
+  .fixturestable {
+    margin: 10px auto;
+  }
+
+  .fixturestable .team img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fixturestable th,
+  .fixturestable td {
+    padding: 6px;
+    font-size: 10px;
+  }
+
+  .fixturestable .team img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Responsivitate */
+@media (max-width: 768px) {
+  .fixturestable .team-logo {
+    width: 25px;
+    height: 25px;
+  }
+
+  .fixturestable .team-name {
+    font-size: 12px;
+  }
+
+  .fixturestable .score {
+    font-size: 14px;
+  }
+
+  .seasontable .club {
+    gap: 5px;
+  }
+
+  .fixture h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fixturestable .team-logo {
+    width: 20px;
+    height: 20px;
+  }
+  .hide-on-small {
+    display: none; /* Hide GS and GA columns */
+  }
+
+  .fixturestable .team-name {
+    font-size: 10px;
+  }
+
+  .fixturestable .score {
+    font-size: 12px;
+  }
+  .fixture h2 {
+    font-size: 18px;
+  }
+}

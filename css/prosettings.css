@@ -1,0 +1,219 @@
+body {
+  font-family: "Premier League", sans-serif;
+}
+
+/* Stilizare generală pentru tabel */
+
+h1 {
+  margin-top: 130px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 40px;
+  font-size: 35px;
+}
+
+.table-container {
+  margin: 50px 30px; /* Adaugă margini stânga și dreapta */
+}
+
+.player-settings {
+  width: 100%;
+  border-collapse: collapse; /* Eliminăm linii între celule */
+  background-color: #f0f0f0; /* Culoare de fundal */
+  border: none; /* Eliminăm marginea exterioară a tabelului */
+  padding: 0 15px; /* Adăugăm margini stânga și dreapta */
+  font-size: 14px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Umbră subtilă */
+}
+
+/* Stilizare pentru celulele tabelului */
+.player-settings th,
+.player-settings td {
+  padding: 10px;
+  border: none; /* Fără linii între coloane */
+  text-align: left;
+}
+
+.player-settings tr {
+  border-top: 1px solid #ddd; /* Linia de delimitare superioară pentru rânduri */
+}
+
+/* Fundal gri pentru header */
+.player-settings th {
+  background-color: #ececec;
+  text-align: left; /* Centrarea textului pentru coloana header */
+  font-size: 14px;
+}
+
+/* Alternare culori între rânduri */
+.player-settings tr:nth-child(odd) {
+  background-color: rgb(
+    255,
+    255,
+    255
+  ); /* Culoare albă pentru rândurile impare */
+}
+
+.player-settings tr:hover {
+  background-color: rgb(246, 246, 246);
+  transition: 0.2s;
+}
+
+.player-settings tr:nth-child(even) {
+  background-color: #ffffff; /* Culoare gri pentru rândurile pare */
+}
+
+/* Stilizare pentru imaginea steagului și nume jucător */
+.player-settings .player-name {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.player-settings img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+/* Link-ul pentru numele jucătorului */
+.player-settings .player-link {
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  align-items: center;
+}
+.player-link:hover {
+  color: orange;
+  transition: 0.2s;
+}
+
+/* Stilizare pentru butonul de toggle */
+.toggle-details {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%; /* Cercul */
+  background-color: #d3d3d3; /* Fundal gri */
+  border: none;
+  color: #000; /* Culoarea neagră pentru semnul + */
+  font-size: 20px;
+  display: flex;
+  justify-content: center; /* Centrare pe orizontală */
+  align-items: center; /* Centrare pe verticală */
+  margin: 0 auto; /* Centrare pe coloana butonului */
+}
+
+/* Stilizare pentru detalii jucător */
+/* Stilizare pentru detalii jucător */
+.player-details {
+  display: none; /* Asigură că se comportă ca un rând de tabel */
+  background-color: #e0e0e0; /* Fundal pentru detalii */
+  padding: 10px;
+  max-width: 300px; /* Ajustează lățimea după preferință */
+  margin: 0 auto; /* Centrează detaliile în interiorul celulei */
+  font-size: 13px;
+  color: #7f7f7f;
+}
+
+.detail {
+  margin-right: 5px;
+  font-size: 15px;
+  color: rgb(36, 36, 36);
+}
+
+/* Stilizare pentru celulele detaliilor jucătorului */
+.player-details td {
+  padding: 5px; /* Ajustăm paddingul */
+  border: none; /* Eliminăm marginea exterioară a celulei */
+}
+
+/* Stilizare pentru paragrafele din detalii */
+.player-details p {
+  margin: 0; /* Eliminăm marginile implicite */
+  margin-left: 3px;
+  padding: 5px 0; /* Padding vertical pentru paragrafe */
+  border-top: 1px solid #f1f1f1;
+}
+
+/* Ascunde prima linie de delimitare */
+.player-details p:first-of-type {
+  border-top: none; /* Fără linie de sus pentru primul paragraf */
+}
+
+.prosettings-info {
+  display: flex;
+  justify-content: space-between; /* Asigură spațierea între text și imagine */
+  align-items: center; /* Centrează pe verticală conținutul */
+  gap: 20px; /* Spațiu între divuri */
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.prosettings-info .div-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #797979;
+}
+
+.prosettings-info .div-text p {
+  margin-bottom: 20px; /* Distanța între paragrafe */
+  line-height: 1.6; /* Crește distanța între linii */
+}
+
+.favplayer {
+  color: orange;
+}
+
+.favplayer:hover {
+  text-decoration: underline;
+}
+
+.div-text {
+  flex: 2; /* Div-ul de text ocupă mai mult spațiu */
+  font-size: 16px;
+}
+
+.settings-img {
+  flex: 0.4; /* Imaginea ocupă mai puțin spațiu */
+}
+
+.settings-img img {
+  width: 300px;
+  height: auto;
+}
+
+/* Media query pentru a ascunde imaginea pe ecrane mai mici */
+@media (max-width: 768px) {
+  .settings-img {
+    display: none; /* Ascunde imaginea pe ecrane mici */
+  }
+}
+
+/* Media queries pentru a face tabelul responsive */
+@media (max-width: 768px) {
+  .table-container {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .player-settings {
+    width: 100%; /* Tabelul se extinde la 100% pe ecrane mai mici */
+    padding: 0 10px; /* Margini stânga și dreapta mai mici */
+  }
+
+  .player-settings th,
+  .player-settings td {
+    padding: 8px; /* Ajustăm paddingul pe ecrane mici */
+  }
+
+  .toggle-details {
+    width: 25px; /* Ajustăm dimensiunea butonului */
+    height: 25px;
+    font-size: 18px; /* Ajustăm fontul */
+  }
+
+  .player-settings img {
+    width: 20px; /* Ajustăm dimensiunea steagului */
+    height: 20px;
+  }
+}

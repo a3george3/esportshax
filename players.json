@@ -1,0 +1,648 @@
+[
+  {
+    "team": "images/logo2.png",
+    "national": "images/italy.png",
+    "national-team": "italy",
+    "elopoints": "37",
+    "name": "Enzo",
+    "goals": 0,
+    "assists": 0,
+    "profileLink": "/profile.html?id=19",
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/italy.png",
+    "national-team": "italy",
+    "elopoints": "1",
+    "name": "smithyo",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/italy.png",
+    "national-team": "italy",
+    "elopoints": "1",
+    "name": "maury",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/italy.png",
+    "national-team": "italy",
+    "elopoints": "1",
+    "name": "dav",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/germany.png",
+    "national-team": "germany",
+    "elopoints": "16",
+    "name": "Akin",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/germany.png",
+    "national-team": "germany",
+    "elopoints": "3",
+    "name": "meloo",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/germany.png",
+    "national-team": "germany",
+    "elopoints": "6",
+    "name": "var",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/germany.png",
+    "national-team": "germany",
+    "elopoints": "2",
+    "name": "er",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/romania.png",
+    "national-team": "romania",
+    "elopoints": "19",
+    "name": "hakut",
+    "profileLink": "/profile.html?id=1",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/romania.png",
+    "national-team": "romania",
+    "elopoints": "4",
+    "name": "modric",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/romania.png",
+    "national-team": "romania",
+    "elopoints": "11",
+    "name": "amp",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/romania.png",
+    "national-team": "romania",
+    "elopoints": "4",
+    "name": "shotutu",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/romania.png",
+    "national-team": "romania",
+    "elopoints": "5",
+    "name": "elite",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/france.png",
+    "national-team": "france",
+    "elopoints": "10",
+    "name": "sosa",
+    "profileLink": "/profile.html?id=11",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/france.png",
+    "national-team": "france",
+    "elopoints": "1",
+    "name": "avr",
+    "profileLink": "/profile.html?id=4",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/czech.png",
+    "national-team": "czech",
+    "elopoints": "7",
+    "name": "martyk",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/czech.png",
+    "national-team": "czech",
+    "elopoints": "4",
+    "name": "martinelli",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/israel.png",
+    "national-team": "israel",
+    "elopoints": "7",
+    "name": "phami",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/israel.png",
+    "national-team": "israel",
+    "elopoints": "6",
+    "name": "musonda",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/israel.png",
+    "national-team": "israel",
+    "elopoints": "11",
+    "name": "special",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/spain.png",
+    "national-team": "Spain",
+    "elopoints": "1",
+    "name": "7331",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/israel.png",
+    "national-team": "israel",
+    "elopoints": "2",
+    "name": "roy",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/israel.png",
+    "national-team": "israel",
+    "elopoints": "3",
+    "name": "khytt",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/israel.png",
+    "national-team": "israel",
+    "elopoints": "2",
+    "name": "scor",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/israel.png",
+    "national-team": "israel",
+    "elopoints": "3",
+    "name": "alaba",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/israel.png",
+    "national-team": "israel",
+    "elopoints": "8",
+    "name": "glory",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/israel.png",
+    "national-team": "israel",
+    "elopoints": "1",
+    "name": "laggermet",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/israel.png",
+    "national-team": "israel",
+    "elopoints": "3",
+    "name": "p4er",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/croatia.png",
+    "national-team": "croatia",
+    "elopoints": "2",
+    "name": "elektra",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/serbia.png",
+    "national-team": "serbia",
+    "elopoints": "7",
+    "name": "jeanreno",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/serbia.png",
+    "national-team": "serbia",
+    "elopoints": "1",
+    "name": "rajsa",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/turkey.png",
+    "national-team": "turkey",
+    "elopoints": "6",
+    "name": "negan",
+    "profileLink": "/profile.html?id=22",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/turkey.png",
+    "national-team": "turkey",
+    "elopoints": "1",
+    "name": "broo",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/turkey.png",
+    "national-team": "turkey",
+    "elopoints": "2",
+    "name": "vichoexe",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/turkey.png",
+    "national-team": "turkey",
+    "elopoints": "3",
+    "name": "Nelso",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/turkey.png",
+    "national-team": "turkey",
+    "elopoints": "2",
+    "name": "Cheaw",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/turkey.png",
+    "national-team": "turkey",
+    "elopoints": "1",
+    "name": "dogu",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/turkey.png",
+    "national-team": "turkey",
+    "elopoints": "1",
+    "name": "ozzy",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/turkey.png",
+    "national-team": "turkey",
+    "elopoints": "6",
+    "name": "mucolaj",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/turkey.png",
+    "national-team": "turkey",
+    "elopoints": "3",
+    "name": "yigitcan",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/turkey.png",
+    "national-team": "turkey",
+    "elopoints": "2",
+    "name": "sunset",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/turkey.png",
+    "national-team": "turkey",
+    "elopoints": "1",
+    "name": "daaf",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/turkey.png",
+    "national-team": "turkey",
+    "elopoints": "3",
+    "name": "bullas",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/turkey.png",
+    "national-team": "turkey",
+    "elopoints": "1",
+    "name": "hermes",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/turkey.png",
+    "national-team": "turkey",
+    "elopoints": "1",
+    "name": "claymore",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/turkey.png",
+    "national-team": "turkey",
+    "elopoints": "1",
+    "name": "johanliebert",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/portugal.png",
+    "national-team": "portugal",
+    "elopoints": "1",
+    "name": "taziek",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/portugal.png",
+    "national-team": "portugal",
+    "elopoints": "6",
+    "name": "-renatooo",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/portugal.png",
+    "national-team": "portugal",
+    "elopoints": "1",
+    "name": "zerorullz",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/denmark.png",
+    "national-team": "denmark",
+    "elopoints": "7",
+    "name": "pedy",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/netherlands.png",
+    "national-team": "netherlands",
+    "elopoints": "4",
+    "name": "levitan",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+
+  {
+    "team": "images/logo2.png",
+    "national": "images/poland.png",
+    "national-team": "poland",
+    "elopoints": "3",
+    "name": "rel",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/poland.png",
+    "national-team": "poland",
+    "elopoints": "1",
+    "name": "vantage",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/poland.png",
+    "national-team": "poland",
+    "elopoints": "1",
+    "name": "ox",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/poland.png",
+    "national-team": "poland",
+    "elopoints": "5",
+    "name": "j1",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/poland.png",
+    "national-team": "poland",
+    "elopoints": "12",
+    "name": "kyo",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/poland.png",
+    "national-team": "poland",
+    "elopoints": "2",
+    "name": "antoni",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/poland.png",
+    "national-team": "poland",
+    "elopoints": "1",
+    "name": "kemuz",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/poland.png",
+    "national-team": "poland",
+    "elopoints": "1",
+    "name": "kao",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/poland.png",
+    "national-team": "poland",
+    "elopoints": "1",
+    "name": "leosia",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/france.png",
+    "national-team": "france",
+    "elopoints": "1",
+    "name": "Morthemer",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/romania.png",
+    "national-team": "romania",
+    "elopoints": "4",
+    "name": "Al1s",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/romania.png",
+    "national-team": "romania",
+    "elopoints": "1",
+    "name": "Papadopol",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  },
+  {
+    "team": "images/logo2.png",
+    "national": "images/poland.png",
+    "national-team": "poland",
+    "elopoints": "2",
+    "name": "nightmare",
+    "goals": 0,
+    "assists": 0,
+    "CS": 0
+  }
+]

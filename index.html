@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Sports HaxBall</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/982b8fc2a9.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"> -->
+    <link
+      href="https://fonts.cdnfonts.com/css/premier-league"
+      rel="stylesheet"
+    />
+    <script src="index.js"></script>
+    <script src="login.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href=""><img src="images/logo2.png" alt="" /></a>
+        </div>
+        <p id="bigfutsal">
+          <span><a href="index.html" class="bigspan">big</a></span> /
+          <span><a href="indexfutsal.html" class="futsalspan">futsal</a></span>
+        </p>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li>
+            <form id="searchForm" class="search-form">
+              <input
+                type="text"
+                id="playerSearch"
+                placeholder="Search a player!"
+                autocomplete="off"
+              />
+              <ul id="searchSuggestions" class="suggestions"></ul>
+            </form>
+          </li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="prosettings.html">PRO SETTINGS</a></li>
+          <li><a href="elo.html">ELO</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn"
+              >LEAGUE<img src="images/arrow.png" alt="" class="downarrow"
+            /></a>
+            <div class="dropdown-content">
+              <a href="season3.html">TABLE</a>
+              <a href="statistics.html">STATISTICS</a>
+            </div>
+          </li>
+          <li id="auth-link">
+            <a href="login.html" class="login-button">Log-in</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="dashboard">
+      <div class="leaguetable">
+        <div class="h2table"><h2>E-Sports Haxball</h2></div>
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th></th>
+              <th>PTS</th>
+              <th>PL</th>
+              <th>GD</th>
+            </tr>
+          </thead>
+          <tbody id="leagueTableBody"></tbody>
+        </table>
+      </div>
+      <div class="imgarticle">
+        <div class="image-container">
+          <a href=""
+            ><img
+              src="images/totw3.jpg"
+              alt="Sample Image"
+              class="responsive-image"
+            />
+            <div class="image-text">REGISTER NOW!</div></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <section class="cards-section">
+      <div class="cards-container">
+        <div class="stats-card-container">
+          <h4>Goals</h4>
+          <div class="card" id="playersStatsCard"></div>
+        </div>
+        <div class="stats-card-container">
+          <h4>Assists</h4>
+          <div class="card" id="playersAssistsCard"></div>
+        </div>
+        <div class="stats-card-container">
+          <h4>Clean Sheets</h4>
+          <div class="card" id="playersCSCard">Card 1</div>
+        </div>
+        <div class="stats-card-container">
+          <h4>GLS. SCORED</h4>
+          <div class="card" id="teamsGoalsCard">Card 1</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="latest-section">
+      <div class="latest-transfers">
+        <div class="leaguetable md1table">
+          <div class="h2table"><h2>MATCHDAY #10</h2></div>
+          <table>
+            <thead>
+              <tr>
+                <th>HOME</th>
+                <th>SCORE</th>
+                <th>AWAY</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="team-cell">
+                  <a href="team.html?teamName=HC%20Prowlers" class="afix">
+                    <div class="teamfix">
+                      <img
+                        src="images/hcprowlers.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>HCP</p>
+                    </div>
+                  </a>
+                </td>
+                <td><p>-</p></td>
+                <td class="team-cell">
+                  <a href="team.html?teamName=ranana" class="afix">
+                    <div class="teamfix">
+                      <img
+                        src="images/ranana.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>RAN</p>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="team-cell">
+                  <a href="team.html?teamName=msby" class="afix">
+                    <div class="teamfix">
+                      <img
+                        src="images/msby.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>MSBY</p>
+                    </div>
+                  </a>
+                </td>
+                <td><p>-</p></td>
+                <td class="team-cell">
+                  <a href="team.html?teamName=The%20Scapers" class="afix">
+                    <div class="teamfix">
+                      <img
+                        src="images/thescapers.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>SCA</p>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="team-cell">
+                  <a href="team.html?teamName=buxton" class="afix">
+                    <div class="teamfix">
+                      <img
+                        src="images/buxton1.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>BUX</p>
+                    </div>
+                  </a>
+                </td>
+                <td><p>0 - 3</p></td>
+                <td class="team-cell">
+                  <a href="team.html?teamName=neXtPlease!" class="afix">
+                    <div class="teamfix">
+                      <img
+                        src="images/nextplease.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>NXP!</p>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="team-cell">
+                  <a
+                    href="team.html?teamName=Fast%20%26%20Furious"
+                    class="afix"
+                  >
+                    <div class="teamfix">
+                      <img
+                        src="images/fnf.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>F&F</p>
+                    </div>
+                  </a>
+                </td>
+                <td><p>2 - 1</p></td>
+                <td class="team-cell">
+                  <a href="team.html?teamName=777moneymakers" class="afix">
+                    <div class="teamfix">
+                      <img
+                        src="images/777moneymakers.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>777M</p>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="team-cell">
+                  <a href="team.html?teamName=nightmare" class="afix">
+                    <div class="teamfix">
+                      <img
+                        src="images/nightmare.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>NIG</p>
+                    </div>
+                  </a>
+                </td>
+                <td><p>3 - 0</p></td>
+                <td class="team-cell">
+                  <a href="team.html?teamName=slipknot" class="afix">
+                    <div class="teamfix">
+                      <img
+                        src="images/slipknot.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>SLK</p>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="team-cell">
+                  <a href="team.html?teamName=fear" class="afix">
+                    <div class="teamfix">
+                      <img
+                        src="images/fear.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>FEAR</p>
+                    </div>
+                  </a>
+                </td>
+                <td><p>-</p></td>
+                <td class="team-cell">
+                  <a href="team.html?teamName=maracaibo" class="afix">
+                    <div class="teamfix">
+                      <img
+                        src="images/maracaibo.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>MAR</p>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="leaguetable md2table">
+          <div class="h2table"><h2>MATCHDAY #11</h2></div>
+          <table>
+            <thead>
+              <tr>
+                <th>HOME</th>
+                <th>SCORE</th>
+                <th>AWAY</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="team-cell">
+                  <a href="team.html?teamName=HC%20Prowlers" class="afix">
+                    <div class="teamfix">
+                      <img
+                        src="images/hcprowlers.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>HCP</p>
+                    </div>
+                  </a>
+                </td>
+                <td><p>-</p></td>
+                <td class="team-cell">
+                  <a href="team.html?teamName=The%20Scapers" class="afix">
+                    <div class="teamfix">
+                      <img
+                        src="images/thescapers.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>SCA</p>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="team-cell">
+                  <a href="team.html?teamName=ranana" class="afix">
+                    <div class="teamfix">
+                      <img
+                        src="images/ranana.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>RAN</p>
+                    </div>
+                  </a>
+                </td>
+                <td><p>-</p></td>
+                <td class="team-cell">
+                  <a href="team.html?teamName=neXtPlease!" class="afix">
+                    <div class="teamfix">
+                      <img
+                        src="images/nextplease.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>NXP!</p>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="team-cell">
+                  <a
+                    href="team.html?teamName=Fast%20%26%20Furious"
+                    class="afix"
+                  >
+                    <div class="teamfix">
+                      <img
+                        src="images/fnf.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>F&F</p>
+                    </div>
+                  </a>
+                </td>
+                <td><p>-</p></td>
+                <td class="team-cell">
+                  <a href="team.html?teamName=msby" class="afix">
+                    <div class="teamfix">
+                      <img
+                        src="images/msby.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>MSBY</p>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="team-cell">
+                  <a href="team.html?teamName=buxton" class="afix">
+                    <div class="teamfix">
+                      <img
+                        src="images/buxton1.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>BUX</p>
+                    </div>
+                  </a>
+                </td>
+                <td><p>-</p></td>
+                <td class="team-cell">
+                  <a href="team.html?teamName=nightmare" class="afix">
+                    <div class="teamfix">
+                      <img
+                        src="images/nightmare.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>NIG</p>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="team-cell">
+                  <a href="team.html?teamName=maracaibo" class="afix">
+                    <div class="teamfix">
+                      <img
+                        src="images/maracaibo.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>MAR</p>
+                    </div>
+                  </a>
+                </td>
+                <td><p>-</p></td>
+                <td class="team-cell">
+                  <a href="team.html?teamName=777moneymakers" class="afix">
+                    <div class="teamfix">
+                      <img
+                        src="images/777moneymakers.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>777M</p>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="team-cell">
+                  <a href="team.html?teamName=slipknot" class="afix">
+                    <div class="teamfix">
+                      <img
+                        src="images/slipknot.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>SLK</p>
+                    </div>
+                  </a>
+                </td>
+                <td><p>-</p></td>
+                <td class="team-cell">
+                  <a href="team.html?teamName=fear" class="afix">
+                    <div class="teamfix">
+                      <img
+                        src="images/fear.png"
+                        alt="Away Team Logo"
+                        class="team-logo"
+                      />
+                      <p>FEAR</p>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <a href="/season3.html" class="button">MORE FIXTURES & RESULTS</a>
+      </div>
+      <div class="latest-news">
+        <h2>Latest News</h2>
+        <div class="latest-news-card">
+          <div class="news-card">
+            <img
+              src="images/imgarticle2.png"
+              alt="Sample Image"
+              class="news-card-img"
+            />
+            <div class="news-card-text">
+              ELO SEASON 15 STARTED!
+              <span class="extra-text">
+                The Autumn ELO SEASON 15 STARTED. 5th Sep - 19th Sep</span
+              >
+            </div>
+          </div>
+          <div class="news-card">
+            <img
+              src="images/imgarticle3.png"
+              alt="Sample Image"
+              class="news-card-img"
+            />
+            <div class="news-card-text">
+              Preseason cup final#3
+              <span class="extra-text">
+                The Preseason was won by Fear for second time in E-Sports
+                Haxball History! Congratulations!</span
+              >
+            </div>
+          </div>
+          <div class="news-card">
+            <img
+              src="images/totw2.jpg"
+              alt="Sample Image"
+              class="news-card-img"
+            />
+            <div class="news-card-text">
+              Team of the week #2 !
+              <span class="extra-text"> Team of the week #2 is here!</span>
+            </div>
+          </div>
+          <div class="news-card">
+            <img
+              src="images/totw1.png"
+              alt="Sample Image"
+              class="news-card-img"
+            />
+            <div class="news-card-text">
+              Team of the week #1 !
+              <span class="extra-text"> Team of the week #1 is here!</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <div class="leaderboard-container">
+      <div class="latest-season">
+        <h2>ELO Season 15</h2>
+        <div class="table-responsive">
+          <table>
+            <caption class="captionstyle">
+              * = +100 ELO FROM SERVER BOSTER
+            </caption>
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Points</th>
+                <th>Record</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>
+                  <div class="name-flag">
+                    <img src="images/poland.png" alt="" />
+                    J1
+                  </div>
+                </td>
+                <td>1445</td>
+                <td>75-49</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>
+                  <div class="name-flag">
+                    <img src="images/turkey.png" alt="" />
+                    Nelso
+                  </div>
+                </td>
+                <td>1379</td>
+                <td>30-16</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>
+                  <div class="name-flag">
+                    <img src="images/turkey.png" alt="" />
+                    Cheaw
+                  </div>
+                </td>
+                <td>1317</td>
+                <td>33-23</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>
+                  <div class="name-flag">
+                    <img src="images/france.png" alt="" />Morthemer*
+                  </div>
+                </td>
+                <td>1299</td>
+                <td>7-2</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>
+                  <div class="name-flag">
+                    <img src="images/israel.png" alt="" />Musonda
+                  </div>
+                </td>
+                <td>1244</td>
+                <td>36-26</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>
+                  <div class="name-flag">
+                    <img src="images/germany.png" alt="" />Var
+                  </div>
+                </td>
+                <td>1243</td>
+                <td>28-18</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>
+                  <div class="name-flag">
+                    <img src="images/turkey.png" alt="" />dogu
+                  </div>
+                </td>
+                <td>1232</td>
+                <td>15-7</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>
+                  <div class="name-flag">
+                    <img src="images/israel.png" alt="" />Special*
+                  </div>
+                </td>
+                <td>1230</td>
+                <td>95-76</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>
+                  <div class="name-flag">
+                    <img src="images/romania.png" alt="" />Al1s
+                  </div>
+                </td>
+                <td>1227</td>
+                <td>24-15</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>
+                  <div class="name-flag">
+                    <img src="images/romania.png" alt="" />Papadopol
+                  </div>
+                </td>
+                <td>1227</td>
+                <td>22-12</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <iframe
+        src="https://www.neatqueue.com/leaderboard/1120686602176442470/1155646661348032542?sort=MMR"
+      ></iframe>
+    </div> -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>About Us</h3>
+          <p>
+            We are one of the biggest
+            <span style="color: orange">Haxball</span> communities.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul class="quick-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">ELO</a></li>
+            <li><a href="/users.html">USERS</a></li>
+            <li><a href="/teams.html">TEAMS</a></li>
+          </ul>
+        </div>
+        <div class="registeredusers">
+          <p class="registered"></p>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p><span style="color: orange">DISCORD:</span> Hakut#1757</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 E-SPORTS HAXBALL. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
