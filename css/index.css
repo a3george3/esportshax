@@ -332,6 +332,39 @@ body {
   background-color: #551818;
 }
 
+.table-footer {
+  margin-top: 10px;
+  background: linear-gradient(to right, #240046, #3c096c);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  /* font-family: "Segoe UI", sans-serif; */
+}
+
+.table-footer p {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+}
+
+.view-full-btn {
+  display: inline-block;
+  background-color: #7b2cbf;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  /* font-size: 1em; */
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.view-full-btn:hover {
+  background-color: #5a189a;
+  transform: scale(1.05);
+}
+
 .dashboard h2 {
   padding: 15px 20px;
   box-sizing: border-box;
