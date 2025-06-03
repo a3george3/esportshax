@@ -1,0 +1,215 @@
+body {
+  background-color: #1c1c1c;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+}
+
+.content {
+  margin-top: 100px;
+}
+
+h1 {
+  color: #a259ff;
+  margin-bottom: 30px;
+}
+
+.button-group {
+  margin-bottom: 30px;
+}
+
+.toggle-btn {
+  background-color: #7b2cbf;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 6px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.toggle-btn:hover {
+  background-color: #5a189a;
+  transform: scale(1.05);
+}
+
+.groups-section,
+.ko-section {
+  display: none;
+  margin-top: 20px;
+}
+
+.group-container {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  margin: 30px auto;
+  padding: 20px;
+  max-width: 900px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.group-title {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #ffd700;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.group-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+}
+
+.group-table thead {
+  background-color: #2e2e2e;
+}
+
+.group-table th,
+.group-table td {
+  padding: 10px;
+  border: 1px solid #444;
+  text-align: center;
+}
+
+.group-table th {
+  color: #fff;
+  font-weight: bold;
+}
+
+.group-table td {
+  color: #ddd;
+}
+
+.group-table td:first-child,
+.group-table th:first-child {
+  width: 40px;
+}
+
+.group-table td:nth-child(2),
+.group-table th:nth-child(2) {
+  text-align: left;
+  padding-left: 15px;
+}
+
+.matches-section {
+  margin-top: 15px;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.match-list {
+  margin-top: 10px;
+}
+
+.match-list li {
+  margin-top: 10px;
+}
+
+.match {
+  background-color: #292929;
+  padding: 8px 12px;
+  margin: 6px 0;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  color: #f0f0f0;
+  font-size: 0.95em;
+}
+
+.match-toggle-btn {
+  background-color: #3f0071;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.match-toggle-btn:hover {
+  background-color: #5f1d91;
+  transform: scale(1.05);
+}
+
+.match-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.match-list li {
+  background-color: #292929;
+  margin: 5px 0;
+  padding: 8px 12px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.ko-title {
+  font-size: 1.8em;
+  color: #ffd700;
+  margin-bottom: 30px;
+}
+
+.match-card {
+  background-color: #1e1e1e;
+  margin: 15px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  border-left: 6px solid #7b2cbf;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.match-card:hover {
+  transform: scale(1.02);
+}
+
+.match-card.final {
+  border-left-color: #ffd700;
+}
+
+.match-round {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #a259ff;
+  margin-bottom: 8px;
+}
+
+.match-vs {
+  font-size: 1.2em;
+  color: #fff;
+}
+
+.match-vs span {
+  color: #ccc;
+  font-weight: 500;
+}
+
+.quarterfinals {
+  margin-bottom: 50px;
+}
+
+.semifinals {
+  margin-bottom: 50px;
+}
+
+.team-logoo {
+  height: 25px;
+  vertical-align: middle;
+  margin-right: 2px;
+  border-radius: 3px;
+}
+
+.match-vs img.team-logo {
+  margin: 0 6px 0 6px;
+}
