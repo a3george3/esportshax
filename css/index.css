@@ -253,7 +253,7 @@ body {
 }
 
 .login-button:hover {
-  background-color: #f38600;
+  background-color: #6900f3;
 }
 /* Stiluri existente */
 
@@ -449,7 +449,7 @@ body {
 }
 
 .image-text:hover {
-  color: #f09819;
+  color: #a519f0;
   transition: 0.4s;
 }
 
@@ -672,7 +672,7 @@ a {
 }
 
 .pName:hover {
-  color: #f09819;
+  color: #820cea;
   transition: 0.2s;
 }
 
@@ -1322,7 +1322,7 @@ footer {
 }
 
 .afix:hover {
-  color: orange;
+  color: rgb(168, 25, 234);
   transition: 0.2s;
 }
 
