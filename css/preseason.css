@@ -210,6 +210,10 @@ h1 {
   border-radius: 3px;
 }
 
+.firstplace {
+  background-color: #331a4d;
+}
+
 .match-vs img.team-logo {
   margin: 0 6px 0 6px;
 }
