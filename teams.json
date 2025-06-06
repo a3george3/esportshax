@@ -1,6 +1,6 @@
 [
   {
-    "name": "Team 1",
+    "name": "Tropa do Q.",
     "points": 0,
     "played": 0,
     "wins": 0,
@@ -9,11 +9,11 @@
     "goalsScored": 0,
     "goalsConceded": 0,
     "goalDifference": 0,
-    "logo": "images/logofutsal.png",
-    "url": "team.html?teamName="
+    "logo": "images/tropa.png",
+    "url": "team.html?teamName=Tropa%20do%20Quim"
   },
   {
-    "name": "Team 2",
+    "name": "Fear",
     "points": 0,
     "played": 0,
     "wins": 0,
@@ -22,76 +22,11 @@
     "goalsScored": 0,
     "goalsConceded": 0,
     "goalDifference": 0,
-    "logo": "images/logofutsal.png",
-    "url": "team.html?teamName="
-  },
-  {
-    "name": "Team 3",
-    "points": 0,
-    "played": 0,
-    "wins": 0,
-    "draws": 0,
-    "losts": 0,
-    "goalsScored": 0,
-    "goalsConceded": 0,
-    "goalDifference": 0,
-    "logo": "images/logofutsal.png",
-    "url": "team.html?teamName="
-  },
-  {
-    "name": "Team 4",
-    "points": 0,
-    "played": 0,
-    "wins": 0,
-    "draws": 0,
-    "losts": 0,
-    "goalsScored": 0,
-    "goalsConceded": 0,
-    "goalDifference": 0,
-    "logo": "images/logofutsal.png",
-    "url": "team.html?teamName="
-  },
-  {
-    "name": "Team 5",
-    "points": 0,
-    "played": 0,
-    "wins": 0,
-    "draws": 0,
-    "losts": 0,
-    "goalsScored": 0,
-    "goalsConceded": 0,
-    "goalDifference": 0,
-    "logo": "images/logofutsal.png",
-    "url": "team.html?teamName="
-  },
-  {
-    "name": "Team 6",
-    "points": 0,
-    "played": 0,
-    "wins": 0,
-    "draws": 0,
-    "losts": 0,
-    "goalsScored": 0,
-    "goalsConceded": 0,
-    "goalDifference": 0,
-    "logo": "images/logofutsal.png",
-    "url": "team.html?teamName="
-  },
-  {
-    "name": "Team 7",
-    "points": 0,
-    "played": 0,
-    "wins": 0,
-    "draws": 0,
-    "losts": 0,
-    "goalsScored": 0,
-    "goalsConceded": 0,
-    "goalDifference": 0,
-    "logo": "images/logofutsal.png",
+    "logo": "images/fear.png",
     "url": "team.html?teamName=fear"
   },
   {
-    "name": "Team 8",
+    "name": "Guzy",
     "points": 0,
     "played": 0,
     "wins": 0,
@@ -100,11 +35,11 @@
     "goalsScored": 0,
     "goalsConceded": 0,
     "goalDifference": 0,
-    "logo": "images/logofutsal.png",
-    "url": "team.html?teamName="
+    "logo": "images/guzy.png",
+    "url": "team.html?teamName=guzy"
   },
   {
-    "name": "Team 9",
+    "name": "Feisar",
     "points": 0,
     "played": 0,
     "wins": 0,
@@ -113,11 +48,76 @@
     "goalsScored": 0,
     "goalsConceded": 0,
     "goalDifference": 0,
-    "logo": "images/logofutsal.png",
-    "url": "team.html?teamName="
+    "logo": "images/feisar.png",
+    "url": "team.html?teamName=feisar"
   },
   {
-    "name": "Team 10",
+    "name": "Visa",
+    "points": 0,
+    "played": 0,
+    "wins": 0,
+    "draws": 0,
+    "losts": 0,
+    "goalsScored": 0,
+    "goalsConceded": 0,
+    "goalDifference": 0,
+    "logo": "images/Visa.png",
+    "url": "team.html?teamName=visa"
+  },
+  {
+    "name": "The Light",
+    "points": 0,
+    "played": 0,
+    "wins": 0,
+    "draws": 0,
+    "losts": 0,
+    "goalsScored": 0,
+    "goalsConceded": 0,
+    "goalDifference": 0,
+    "logo": "images/thelight.png",
+    "url": "team.html?teamName=the%20light"
+  },
+  {
+    "name": "Buxton",
+    "points": 0,
+    "played": 0,
+    "wins": 0,
+    "draws": 0,
+    "losts": 0,
+    "goalsScored": 0,
+    "goalsConceded": 0,
+    "goalDifference": 0,
+    "logo": "images/buxtonn.png",
+    "url": "team.html?teamName=buxton"
+  },
+  {
+    "name": "BeyondTW",
+    "points": 0,
+    "played": 0,
+    "wins": 0,
+    "draws": 0,
+    "losts": 0,
+    "goalsScored": 0,
+    "goalsConceded": 0,
+    "goalDifference": 0,
+    "logo": "images/btw.png",
+    "url": "team.html?teamName=btw"
+  },
+  {
+    "name": "Spitfire",
+    "points": 0,
+    "played": 0,
+    "wins": 0,
+    "draws": 0,
+    "losts": 0,
+    "goalsScored": 0,
+    "goalsConceded": 0,
+    "goalDifference": 0,
+    "logo": "images/spitfire.png",
+    "url": "team.html?teamName=spitfire"
+  },
+  {
+    "name": "Gorosei",
     "points": 0,
     "played": 0,
     "wins": 0,
@@ -127,6 +127,6 @@
     "goalsConceded": 0,
     "goalDifference": 0,
     "logo": "images/logofutsal.png",
-    "url": "team.html?teamName="
+    "url": "team.html?teamName=gorosei"
   }
 ]
